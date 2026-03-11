@@ -10,6 +10,35 @@ hobbik: sakk, lovaglás, irodalom
 
 posztok:
 
+Első konzul 
+hely: Luxembourgi-palota
+időpont: 1799 december
+leírás:
+poszt címe: Konzul lettem!
+leírása: Most éppen csak első konzul lettem, de ki tudja pár év múlva még mi! Nagy terveim vannak
+
+Kommentek:
+
+Jean Auguste Dominique Ingres: Eddigi legjobb művem, nagyon drága egy ilyen jó vászon.
+Random francia ember: biztos, hogy csaltál a választásokon
+Carlo Buonaparte: Büszke vagyok rád fiam!
+
+
+Franciaország császára
+hely: Notre-Dame
+időpont: 1804. december 2.
+kép: notre-dame, koszonomabizalmat
+poszt címe: Franciaország császára!
+leírása: Nekem nem az egyháztól származik a hatalmam.
+
+Kommentek:
+
+VII. Piusz Pápa: Majd meglátjuk mit gondolsz erről a túlvilágon
+Louis‑Alexandre Berthier: Nem kell megköszönni
+I. Sándor: úgy nézel ki mint egy jól lakott ovodás
+    -> napóleon válaszol: Te mondod dagi
+
+
 Itália Királya
 hely: milánói dóm
 időpont: 1805 május 26
@@ -23,17 +52,20 @@ Louis‑Alexandre Berthier: Nagyot ment (hadvezére)
 Joseph Bonaparte: GOAT (bátyja)
 I. Sándor: alig éred fel a trónt (olaszország akkori cárja)
 
-
-Köszönöm a bizalmat!
-hely: Notre-Dame
-időpont: 1804. december 2.
-poszt címe: Franciaország császára!
-leírása: Nekem nem az egyháztól származik a hatalmam.
+oroszországi hadjárat
+hely: nincs megosztva
+kép: orosz, porte
+poszt címe: Irány oroszország!
+leírása: 800 ezer fős sereget indítok oroszország ellen! Nem pakoltam téli ruhát, remélem nem lesz belőle baj.
 
 Kommentek:
 
-VII. Piusz Pápa: Majd meglátjuk mit gondolsz erről a túlvilágon
-Louis‑Alexandre Berthier: Nem kell megköszönni
-I. Sándor: úgy nézel ki mint egy jól lakott ovodás
-    -> napóleon válaszol: Te mondod dagi
+Jacques-Louis David: Látom tetszik a porté
+I. Sándor orosz cár: Már majdnem elhittük, hogy nyerni fogsz (a hadjárat vége után posztolva)
+Joseph Bonaparte: Nagyon tolod
+Jean Auguste Dominique Ingres: Miért váltottál le? :(
+
+
+
+
 
