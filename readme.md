@@ -31,8 +31,6 @@ Lehetnek saját készítésű ábrák, képek, fotók, vagy  AI-val készült k�
     - Robespierre
     - Adam Smith
     - Egyéb - előzetes egyeztetés után
-
-
     - Bessenyei György 
     - Kazinczy Ferenc
     - Csokonai Vitéz Mihály
