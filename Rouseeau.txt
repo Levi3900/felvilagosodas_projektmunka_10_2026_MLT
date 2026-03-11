@@ -13,9 +13,31 @@ hely: Genf
 időpont :  1750
 kép: vragszedes.jpg
 poszt címe: Virágszedés Genf-ben
-leírás: Nagyon szeretem a virágokat főleg sétálgatás közben a szabadban szeretem őket felszedni
+leírás: Tegnap voltam virágokat szedni Genf szép városában. Nagyon szeretem a virágokat főleg sétálgatás közben a szabadban szeretem őket felszedni
 
 Kommentek: 
 Voltaire: Bolond aki virágot szed 👎👎👎
-Diderot: Nagyon jó a kép tesi
+Diderot: Nagyon jó a kép tesó
 Jean le Rond d'Alembert: milyen vászont használsz, nagyon tetszik
+
+Post2: 
+hely: Amsterdam
+időpont: 1762
+kép: Tarsadalmi_szerzodes.jpg
+poszt címe: Társadalmi szerződés kiadása
+leírás: Megírtam életem egyik legynagyobb művét, amin nagyon sokat dolgoztam, pontosan 6 évet. A minap adtam ki Amseterdamban. Szerettem volna egy olyan művet kiadni, ami azt vizsgálja, hogyan hozható létre olyan állami hatalom, amely törvényes (legitim), miközben az egyén megőrzi a szabadságát.
+
+Kommentek:
+Voltaire: Sosem használtak még ennyi szellemességet arra, hogy butává tegyenek bennünket, az embernek kedve támad négykézláb járni, amikor az Ön művét olvassák.
+Immanuel Kant: Nagyon inspirálónak találtam a művet.
+Johann Wolfgang von Goethe: Nem teljesen értek egyet a művel, de szerintem ez egy új világnézetet hoz létre a világnak.
+
+Post3:
+hely: Montmorency
+időpont: 1762
+kép: EmileTitle.jpg
+poszt címe: Emil, avagy a nevelésről
+leírás: Sokat dolgoztam ezen a művemen. Arról szól hogy az emberek alapvetően szabadnak születnek, a társadalom rontja el őket. Ezzel a művel szeretném a nevelés pontos leírását megírni.
+
+Kommentek:
+Voltaire: 
