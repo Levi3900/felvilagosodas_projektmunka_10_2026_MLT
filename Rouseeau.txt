@@ -40,4 +40,5 @@ poszt címe: Emil, avagy a nevelésről
 leírás: Sokat dolgoztam ezen a művemen. Arról szól hogy az emberek alapvetően szabadnak születnek, a társadalom rontja el őket. Ezzel a művel szeretném a nevelés pontos leírását megírni.
 
 Kommentek:
-Voltaire: 
+Voltaire: Önnek sikerült az, ami eddig senkinek: négyszáz oldalon keresztül prédikálni az erényről, miközben saját gyermekeit a találtak kórházának küszöbén hagyta.
+Montesquieu: Szépen írsz, de ez az egész egy nagy buborék. A valóságban Emilből nem szabad ember lenne, hanem egy életképtelen fura figura, aki azt se tudná, hogyan kérjen egy kávét.
