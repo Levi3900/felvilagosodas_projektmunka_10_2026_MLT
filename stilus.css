@@ -1,0 +1,88 @@
+:root {
+    --bg-color: #EEEEEE;
+    --text-color: #000000;
+    --accent-color: #833AB4;
+    --instagram-gradient: conic-gradient(
+        from 180deg,
+        #fdf497 0deg,
+        #fdf497 30deg,
+        #fd5949 90deg,
+        #d6249f 180deg,
+        #285AEB 270deg,
+        #fdf497 360deg
+    );
+}
+
+nav {
+    justify-self: start;
+    padding-left: 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body {
+    display: grid;
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 1fr 800px 1fr ;
+    margin: 0;
+    justify-content: center;
+}
+
+#Instagram_felirat {
+    font-family: "Brush Script MT", cursive;
+}
+
+main {
+    display: grid;
+    max-width: 800px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    grid-template-areas: 
+    "h h h"
+    "ar ar as"
+    ;
+}
+
+header {
+    grid-template-columns: auto;
+    grid-area: h;
+}
+
+.story_ring { /*AI által adott ötlet, általam kivitelezett*/
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--instagram-gradient);
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.story_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+article {
+    display: grid;
+    max-width: 500px;
+    margin: auto;
+    grid-area: ar;
+}
+
+aside {
+    display: grid;
+    max-width: 300px;
+    margin: auto;
+    grid-area: as;
+}
