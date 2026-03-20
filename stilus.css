@@ -2,6 +2,7 @@
     --bg-color: #EEEEEE;
     --text-color: #000000;
     --accent-color: #833AB4;
+    --main-color: white;
     --instagram-gradient: conic-gradient(
         from 180deg,
         #fdf497 0deg,
@@ -45,7 +46,6 @@ main {
     max-width: 800px;
     margin: auto;
     grid-template-columns: 1fr 1fr;
-    background-color: white;
     grid-template-areas: 
     "h h h"
     "ar ar as"
@@ -55,6 +55,8 @@ main {
 header {
     grid-template-columns: auto;
     grid-area: h;
+    max-width: 500px;
+    background-color: var(--main-color);
 }
 
 .story_ring { /*AI által adott ötlet, általam kivitelezett*/
@@ -73,16 +75,35 @@ header {
     border-radius: 50%;
 }
 
+.stories {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.stories::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
+    display: none;
+}
+
 article {
     display: grid;
     max-width: 500px;
     margin: auto;
     grid-area: ar;
+    background-color: var(--main-color);
 }
 
-aside {
+aside { /*félkész*/
     display: grid;
     max-width: 300px;
     margin: auto;
     grid-area: as;
+}
+
+#aside_content {
+    background-color: var(--main-color);
+    margin-left: 10px;
 }
