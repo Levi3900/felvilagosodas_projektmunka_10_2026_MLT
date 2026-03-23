@@ -82,10 +82,33 @@ header {
     gap: 30px;
     overflow-x: auto;
     overflow-y: hidden;
+    padding: 5px;
 }
 
 .stories::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
     display: none;
+}
+
+.show_story {
+    margin: auto;
+    width: 100%;
+    display: none;
+    position: fixed;
+}
+
+#close_button {
+    position: fixed;
+    top: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.story_settings {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    top: 100px;
 }
 
 article {
