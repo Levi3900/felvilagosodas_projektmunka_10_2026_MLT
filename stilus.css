@@ -45,7 +45,7 @@ main {
     display: grid;
     max-width: 800px;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "h h h"
     "ar ar as"
@@ -58,6 +58,14 @@ header {
     max-width: 500px;
     background-color: var(--main-color);
 }
+
+article {
+    display: grid;
+    max-width: 500px;
+    grid-area: ar;
+    background-color: var(--main-color);
+}
+
 
 .story_ring { /*AI által adott ötlet, általam kivitelezett*/
     width: 90px;
@@ -89,6 +97,10 @@ header {
     display: none;
 }
 
+.post_content::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
+    display: none;
+}
+
 .show_story {
     margin: auto;
     width: 100%;
@@ -104,6 +116,12 @@ header {
     border-radius: 15px;
 }
 
+.post_header {
+    max-height: 40px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
 .story_settings {
     width: 100%;
     max-width: 500px;
@@ -111,12 +129,32 @@ header {
     top: 100px;
 }
 
-article {
+.story_ring_post {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--instagram-gradient);
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.post_username {
+    margin: auto 0 auto 0;
+}
+
+.post_img {
+    width: 500px;
+    height: 500px;
+}
+
+.post_content {
     display: grid;
-    max-width: 500px;
-    margin: auto;
-    grid-area: ar;
-    background-color: var(--main-color);
+    grid-auto-flow: column;
+    grid-auto-columns: 500px;
+    width: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 aside { /*félkész*/
