@@ -27,14 +27,16 @@ if (post_scroll) {
 }
 // AI
 
-const story_button = document.querySelectorAll(".stories");
+const story_button = document.querySelectorAll(".stories > div"); //AI: .stories > div
+
 story_button.forEach(
     function (story_button) {
-    story_button.addEventListener("click", function (e) { e.preventDefault();
-        document.getElementsByClassName("show_story")[0].style.display = "block";
-        
-    });
-})
+        story_button.addEventListener("click", function (e) { e.preventDefault();
+            document.getElementsByClassName("story_settings")[0].src = "assets/" + story_button.id + ".png";
+            document.getElementsByClassName("show_story")[0].style.display = "block";
+        });
+    }
+)
 
 function close_story(event) {
     event.stopPropagation(); //AI
