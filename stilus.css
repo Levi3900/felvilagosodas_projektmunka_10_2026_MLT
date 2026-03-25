@@ -187,8 +187,21 @@ aside {
     width: 300px;
     margin: 0;
     grid-area: as;
+    height: 300px;
 }
- 
+
+.aside_profil img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.aside_profil {
+    display: grid;
+    grid-auto-flow: column;
+}
+
 #aside_content {
     background-color: var(--main-color);
     margin-left: 10px;
