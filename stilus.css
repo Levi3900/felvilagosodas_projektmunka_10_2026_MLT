@@ -64,8 +64,6 @@ header {
     border-radius: 50%;
     background: var(--instagram-gradient);
     padding: 5px;
-    align-items: center;
-    justify-content: center;
 }
  
 .story_img {
@@ -126,8 +124,6 @@ header {
     border-radius: 50%;
     background: var(--instagram-gradient);
     padding: 3px;
-    align-items: center;
-    justify-content: center;
 }
  
 .post_username {
@@ -152,6 +148,10 @@ section {
     overflow-x: auto;
     overflow-y: hidden;
 }
+
+.icons {
+     max-width: 30px
+}
  
 article {
     display: grid;
@@ -161,7 +161,27 @@ article {
     background-color: var(--main-color);
     min-width: 0;
 }
- 
+
+.post_interaction {
+    max-width: 120px;
+    padding: 5px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.post_interaction p {
+    margin: 5px 20px auto auto;
+}
+
+.post_footer {
+    padding: 5px;
+}
+
+.post_time {
+    color: lightslategray;
+    font-size: 14px;
+}
+
 aside {
     display: grid;
     width: 300px;
@@ -169,7 +189,7 @@ aside {
     grid-area: as;
 }
  
-#aside_ontent {
+#aside_content {
     background-color: var(--main-color);
     margin-left: 10px;
 }
