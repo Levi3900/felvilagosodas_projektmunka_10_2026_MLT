@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="instagram">
-    <meta name="keywords" content="instagram, social media, felvilágosodás">
-    <link rel="stylesheet" href="stilus.css">
-
-    <title>Göröcs Máté - Kovács Levente - Nagy Tamás</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="instagram">
+<meta name="keywords" content="instagram, social media, felvilágosodás"> 
+<link rel="stylesheet" href="stilus.css">
+<title>Göröcs Máté - Kovács Levente - Nagy Tamás</title>
 </head>
 <body>
     <nav>
-        <h1 id="Instagram_felirat">Instagram</h1>
-        <ul>
-            <li><a href="#">Kezdőlap</a></li>
-            <li><a href="#">Reels</a></li>
-            <li><a href="#">Üzenetek</a></li>
-            <li><a href="#">Profil</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="show_story">
-            <img src="assets/napoleon_story.png" alt="" class="story_settings">
-            <button id="close_button" onclick="close_story(event)">
-                X
-            </button>
-        </div>
-        <header>
-            <div class="stories">
-                <div id="napoleon_story">
-                    <a href="#"><img src="assets/napoleon_profilkep.jpg" alt="profilkép" class="story_ring"></a>
-                    <p>napoleon_611</p>
-                </div>
-                <div id="">
-                    <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
-                    <p>default_profile</p>
-                </div>
-                <div id="">
-                    <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
-                    <p>default_profile</p>
-                </div>
-                <div id="">
-                    <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
-                    <p>default_profile</p>
-                </div>
-                <div id="">
-                    <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
-                    <p>default_profile</p>
-                </div>
+ 
+    <h1 id="Instagram_felirat">Instagram</h1>
+    <ul>
+        <li><a href="#">Kezdőlap</a></li>
+        <li><a href="#">Reels</a></li>
+        <li><a href="#">Üzenetek</a></li>
+        <li><a href="#">Profil</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="show_story">
+        <img src="assets/napoleon_story.png" alt="" class="story_settings">
+        <button id="close_button" onclick="close_story(event)">
+            X
+        </button>
+    </div>
+    <header>
+        <div class="stories">
+            <div id="napoleon_story">
+                <a href="#"><img src="assets/napoleon_profilkep.jpg" alt="profilkép" class="story_ring"></a>
+                <p>napoleon_611</p>
             </div>
+            <div id="">
+                <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
+                <p>default_profile</p>
+            </div>
+            <div id="">
+                <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
+                <p>default_profile</p>
+            </div>
+            <div id="">
+                <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
+                <p>default_profile</p>
+            </div>
+            <div id="">
+                <a href="#"><img src="assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
+                <p>default_profile</p>
+            </div>
+        </div>
+    </header>
+    <article>
+        <!--story card-->
+        <section> 
+            <div class="post_header">
+                <img src="assets/napoleon_profilkep.jpg" alt="" class="story_ring_post">
+                <h3 class="post_username">napoleon_611</h3>
+            </div>
+<<<<<<< HEAD
         </header>
         <article>
             <section>
@@ -70,10 +79,58 @@
                 <h1>Aside (követők/kit kövess)</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eaque totam. Quaerat perferendis praesentium magni rem deleniti illum autem vero esse, illo ullam maxime, omnis eveniet beatae deserunt sequi error.
-                </p>
+=======
+            <div class="post_content">
+                <img src="assets/konzul.jpg" alt="" class="post_img">
+                <img src="assets/koszonomabizalmat.png" alt="" class="post_img">
             </div>
-        </aside>
-    </main>
-    <script src="script.js"></script>  
+            <div class="post_interaction">
+                <img src="istagram logos/like2.png" alt="" class="icons">
+                <p>45</p>
+                <img src="istagram logos/comment.png" alt="" class="icons">
+                <p>4</p>
+                <img src="istagram logos/mentes34.png" alt="" class="icons">
+                <p>7</p>
+            </div>
+            <div class="post_footer">
+                <p class="post_time">
+                    1799 december
+>>>>>>> 3e6b87b71d266c80b1b63930e00611abdb090485
+                </p>
+                <p>Most éppen csak első konzul lettem, de ki tudja pár év múlva még mi! Nagy terveim vannak</p>
+            </div>
+        </section>
+
+    </article>
+    <aside>
+        <div id="aside_content">
+            <h1>Javasolt profilok:</h1> 
+            <section class="aside_profil">
+            <img src="Rousseau.jpg" alt="kep" class="story_ring">
+            <div>
+                    <h3>rousseau_123</h2>
+                <div>
+                    <p><strong>3</strong> bejegyzés</p>
+                    <p><strong>4</strong> követő</p>
+                    <p><strong>7</strong> követés</p>
+                </div>
+            </div>
+            </section>
+            <section class="aside_profil">
+            <img src="assets/napoleon_profilkep.jpg" alt="kep" class="story_ring">
+            <div>
+                    <h3>napoleon_611</h2>
+                <div>
+                    <p><strong>4</strong> bejegyzés</p>
+                    <p><strong>67</strong> követő</p>
+                    <p><strong>4</strong> követés</p>
+                </div>
+            </div>
+            </section>
+        </div>
+    </aside>
+</main>
+ 
+<script src="script.js"></script>
 </body>
 </html>
