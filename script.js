@@ -11,6 +11,20 @@ if (stories) {
         });
     }, { passive: false });
 }
+
+const post_scroll = document.querySelector(".post_content");
+
+if (post_scroll) {
+    post_scroll.addEventListener("wheel", function (e) {
+        e.preventDefault();
+
+        const scrollAmount = e.deltaY > 0 ? 100 : -100;
+        post_scroll.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+    }, { passive: false });
+}
 // AI
 
 const story_button = document.querySelectorAll(".stories");

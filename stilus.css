@@ -1,64 +1,63 @@
-:root {
-    --bg-color: #EEEEEE;
-    --text-color: #000000;
-    --accent-color: #833AB4;
-    --main-color: white;
-    --instagram-gradient: conic-gradient(
-        from 180deg,
-        #fdf497 0deg,
-        #fdf497 30deg,
-        #fd5949 90deg,
-        #d6249f 180deg,
-        #285AEB 270deg,
-        #fdf497 360deg
-    );
+ :root {
+--bg-color: #EEEEEE;
+--text-color: #000000;
+--accent-color: #833AB4;
+--main-color: white;
+--instagram-gradient: conic-gradient(
+    from 180deg,
+    #fdf497 0deg,
+    #fdf497 30deg,
+    #fd5949 90deg,
+    #d6249f 180deg,
+    #285AEB 270deg,
+    #fdf497 360deg
+ 
+);
 }
-
+ 
 nav {
-    justify-self: start;
-    padding-left: 10px;
+justify-self: start;
+padding-left: 10px;
 }
-
+ 
 nav li {
-    list-style: none;
+list-style: none 
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--text-color);
+text-decoration: none;
+color: var(--text-color);
 }
-
+ 
 body {
-    display: grid;
-    background-color: var(--bg-color);
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: 1fr 800px 1fr ;
-    margin: 0;
-    justify-content: center;
+display: grid;
+background-color: var(--bg-color);
+font-family: Arial, Helvetica, sans-serif;
+grid-template-columns: 1fr 800px 1fr ;
+margin: 0;
+justify-content: center; 
 }
 
 #Instagram_felirat {
-    font-family: "Brush Script MT", cursive;
+font-family: "Brush Script MT", cursive; 
 }
 
 main {
     display: grid;
     max-width: 800px;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "h h h"
-    "ar ar as"
-    ;
+    grid-template-columns: 500px 300px;
+    grid-template-areas:
+    "h h"
+    "ar as";
 }
-
+ 
 header {
-    grid-template-columns: auto;
     grid-area: h;
     max-width: 500px;
     background-color: var(--main-color);
 }
-
+ 
 .story_ring { /*AI által adott ötlet, általam kivitelezett*/
     width: 90px;
     height: 90px;
@@ -68,13 +67,13 @@ header {
     align-items: center;
     justify-content: center;
 }
-
+ 
 .story_img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
-
+ 
 .stories {
     display: grid;
     grid-auto-flow: column;
@@ -84,16 +83,20 @@ header {
     overflow-y: hidden;
     padding: 5px;
 }
-
+ 
 .stories::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
     display: none;
 }
 
+.post_content::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
+    display: none;
+}
+ 
 .show_story {
     margin: auto;
     width: 100%;
     display: none;
-    position: fixed;
+    position: fixed; 
 }
 
 #close_button {
@@ -101,32 +104,72 @@ header {
     top: 100px;
     background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
 
+.post_header {
+    max-height: 40px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+ 
 .story_settings {
     width: 100%;
     max-width: 500px;
     position: fixed;
     top: 100px;
 }
+ 
+.story_ring_post {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--instagram-gradient);
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.post_username {
+    margin: auto 0 auto 0;
+}
 
+section {
+    min-width: 0;
+}
+
+.post_img {
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+ 
+.post_content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 500px;
+    width: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+ 
 article {
     display: grid;
-    max-width: 500px;
-    margin: auto;
+    width: 500px;
+    margin: 0;
     grid-area: ar;
     background-color: var(--main-color);
+    min-width: 0;
 }
-
-aside { /*félkész*/
+ 
+aside {
     display: grid;
-    max-width: 300px;
-    margin: auto;
+    width: 300px;
+    margin: 0;
     grid-area: as;
 }
-
-#aside_content {
+ 
+#aside_ontent {
     background-color: var(--main-color);
     margin-left: 10px;
 }
