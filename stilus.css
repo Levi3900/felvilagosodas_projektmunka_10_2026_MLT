@@ -46,18 +46,10 @@ main {
     display: grid;
     max-width: 800px;
     margin: auto;
-<<<<<<< HEAD
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "h h h"
-    "ar ar as"
-    ;
-=======
     grid-template-columns: 500px 300px;
     grid-template-areas:
     "h h"
     "ar as";
->>>>>>> 3e6b87b71d266c80b1b63930e00611abdb090485
 }
  
 header {
@@ -65,19 +57,7 @@ header {
     max-width: 500px;
     background-color: var(--main-color);
 }
-<<<<<<< HEAD
-
-article {
-    display: grid;
-    max-width: 500px;
-    grid-area: ar;
-    background-color: var(--main-color);
-}
-
-
-=======
  
->>>>>>> 3e6b87b71d266c80b1b63930e00611abdb090485
 .story_ring { /*AI által adott ötlet, általam kivitelezett*/
     width: 90px;
     height: 90px;
@@ -109,11 +89,7 @@ article {
 .post_content::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
     display: none;
 }
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 3e6b87b71d266c80b1b63930e00611abdb090485
 .show_story {
     margin: auto;
     width: 100%;
@@ -134,55 +110,24 @@ article {
     display: grid;
     grid-template-columns: 50px 1fr;
 }
-<<<<<<< HEAD
-
-=======
  
->>>>>>> 3e6b87b71d266c80b1b63930e00611abdb090485
 .story_settings {
     width: 100%;
     max-width: 500px;
     position: fixed;
     top: 100px;
 }
-<<<<<<< HEAD
-
-=======
  
->>>>>>> 3e6b87b71d266c80b1b63930e00611abdb090485
 .story_ring_post {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: var(--instagram-gradient);
     padding: 3px;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: center;
-}
-
-.post_username {
-    margin: auto 0 auto 0;
-}
-
-.post_img {
-    width: 500px;
-    height: 500px;
-}
-
-.post_content {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 500px;
-    width: 500px;
-    overflow-x: auto;
-    overflow-y: hidden;
-=======
 }
  
 .post_username {
     margin: auto 0 auto 0;
->>>>>>> 3e6b87b71d266c80b1b63930e00611abdb090485
 }
 
 section {
