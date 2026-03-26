@@ -42,3 +42,22 @@ function close_story(event) {
     event.stopPropagation(); //AI
     document.getElementsByClassName("show_story")[0].style.display = "None";
 }
+
+const comment_show = document.querySelectorAll(".post_interaction a");
+
+comment_show.forEach(
+    function (comment_show) {
+        comment_show.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            let post = comment_show.closest("section");
+            let comment = post.getElementsByClassName("post_comment")[0];
+
+            if (comment.style.display === "block") {
+                comment.style.display = "none";
+            } else {
+                comment.style.display = "block";
+            }
+        });
+    }
+)

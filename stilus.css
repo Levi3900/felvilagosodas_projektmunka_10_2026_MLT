@@ -31,34 +31,51 @@
     border-right: 1px solid black; 
     padding-right: 15px;             
     margin-right: 5px;               
-    height: 35px; 
+    width:  35px; 
 }
 
 nav {
-justify-self: start;
-padding-left: 10px;
+    margin-top: 10px;
+    justify-self: start;
+    padding-left: 30px;
+    padding-right: 50px;
+    border-right: 3px solid black;
+    position: sticky;
+    top: 0;
+    height: 100vh; 
 }
  
 nav li {
-list-style: none 
+    list-style: none;
 }
 
 a {
-text-decoration: none;
-color: var(--text-color);
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+nav a {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    transform: 
+        scale(2.00);
 }
  
 body {
-display: grid;
-background-color: var(--bg-color);
-font-family: Arial, Helvetica, sans-serif;
-grid-template-columns: 1fr 800px 1fr ;
-margin: 0;
-justify-content: center; 
+    display: grid;
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 1fr 800px 1fr ;
+    margin: 0;
+    justify-content: center; 
 }
 
 #Instagram_felirat {
-font-family: "Brush Script MT", cursive; 
+    font-family: "Brush Script MT", cursive; 
 }
 
 main {
@@ -171,6 +188,10 @@ section {
 .icons {
      max-width: 30px
 }
+
+.icons_nav {
+    max-width: 20px;
+}
  
 article {
     display: grid;
@@ -201,12 +222,24 @@ article {
     font-size: 14px;
 }
 
+.post_comment {
+    border-top: 1px solid black;
+    font-size: 14px;
+    display: none;
+}
+
+.comment_valasz {
+    margin-left: 50px;
+}
+
 aside {
     display: grid;
     width: 300px;
     margin: 0;
     grid-area: as;
     height: 300px;
+    position: sticky;
+    top: 0;
 }
 
 .aside_profil img {
