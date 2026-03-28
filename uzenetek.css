@@ -1,0 +1,276 @@
+ :root {
+--bg-color: #EEEEEE;
+--text-color: #000000;
+--accent-color: #833AB4;
+--main-color: white;
+--instagram-gradient: conic-gradient(
+    from 180deg,
+    #fdf497 0deg,
+    #fdf497 30deg,
+    #fd5949 90deg,
+    #d6249f 180deg,
+    #285AEB 270deg,
+    #fdf497 360deg
+ 
+);
+}
+
+#logo {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: right; 
+    gap: 15px;
+    align-items: center
+}
+
+#logo h1 {
+    font-family: "Brush Script MT", cursive;
+}
+ 
+#logo img {
+    border-right: 1px solid black; 
+    padding-right: 15px;             
+    margin-right: 5px;               
+    width:  35px; 
+}
+
+nav {
+    margin-top: 10px;
+    justify-self: start;
+    padding-left: 30px;
+    padding-right: 50px;
+    border-right: 3px solid black;
+    position: sticky;
+    top: 0;
+    height: 100vh; 
+}
+ 
+nav li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+nav a {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    transform: 
+        scale(2.00);
+}
+ 
+body {
+    display: grid;
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 1fr 800px 1fr ;
+    margin: 0;
+    justify-content: center; 
+}
+
+#Instagram_felirat {
+    font-family: "Brush Script MT", cursive; 
+}
+
+main {
+    display: grid;
+    max-width: 800px;
+    margin: auto;
+    grid-template-columns: 500px 300px;
+    grid-template-areas:
+    "h h"
+    "ar as";
+}
+ 
+header {
+    grid-area: h;
+    max-width: 500px;
+    background-color: var(--main-color);
+}
+ 
+.story_ring { /*AI által adott ötlet, általam kivitelezett*/
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--instagram-gradient);
+    padding: 5px;
+}
+ 
+.story_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+ 
+.stories {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 5px;
+}
+ 
+.stories::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
+    display: none;
+}
+
+.post_content::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
+    display: none;
+}
+
+.show_story {
+    margin: auto;
+    width: 100%;
+    display: none;
+    position: fixed; 
+}
+
+#close_button {
+    position: fixed;
+    top: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 15px; 
+}
+
+.post_header {
+    max-height: 40px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+ 
+.story_settings {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    top: 100px;
+}
+
+section {
+    min-width: 0;
+}
+
+.icons {
+     max-width: 30px
+}
+
+.icons_nav {
+    max-width: 20px;
+}
+ 
+article {
+    display: grid;
+    width: 500px;
+    margin: 0;
+    grid-area: ar;
+    background-color: var(--main-color);
+    min-width: 0;
+    padding-bottom: 1000px; /*Ideiglenes*/
+}
+
+.story_ring_msg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--instagram-gradient);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.message {
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black; 
+    max-height: 80px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding-bottom: 15px;
+}
+
+aside {
+    display: grid;
+    width: 300px;
+    margin: 0;
+    grid-area: as;
+    height: 300px;
+    position: sticky;
+    top: 0;
+}
+
+.aside_profil img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.aside_profil {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#aside_content {
+    background-color: var(--main-color);
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "ar";
+    }
+    
+    aside {
+        display: none;
+    }
+
+    body {
+    grid-template-columns: 1fr 600px;
+    margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+        main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "ar"
+    }
+    
+    aside {
+        display: none;
+    }
+
+    body {
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    }
+
+    nav img {
+        width: 15px;
+    }
+
+    #logo img {
+        width: 100%;
+        max-width: 25px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #logo h1 {
+        margin-left: 5px;
+    }
+}
