@@ -260,7 +260,7 @@ aside {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
     main {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -273,42 +273,61 @@ aside {
     }
 
     body {
-    grid-template-columns: 1fr 600px;
-    margin: auto;
-    }
-}
-
-@media screen and (max-width: 900px) {
-        main {
+        max-width: 500px;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "h"
-        "ar"
+        margin: auto;
+        display: block;
+        padding-bottom: 60px;
     }
-    
-    aside {
+
+    nav {
+        display: block;
+        position: fixed;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: 0;
+        margin-left: 0;
+        padding: 0;
+        height: auto;
+        border: none;
+        background: none;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav li a:hover {
+        transform: none;
+    }
+
+    #logo {
         display: none;
     }
 
-    body {
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 500px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: var(--main-color);
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    nav a {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 12px;
     }
 
     nav img {
         width: 15px;
-    }
-
-    #logo img {
-        width: 100%;
-        max-width: 25px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    #logo h1 {
-        margin-left: 5px;
     }
 }
