@@ -101,37 +101,6 @@ header {
     background: var(--instagram-gradient);
     padding: 5px;
 }
- 
-.story_img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
- 
-.stories {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: auto;
-    gap: 30px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 5px;
-}
- 
-.stories::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
-    display: none;
-}
-
-.post_content::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
-    display: none;
-}
-
-.show_story {
-    margin: auto;
-    width: 100%;
-    display: none;
-    position: fixed; 
-}
 
 #close_button {
     position: fixed;
@@ -141,21 +110,59 @@ header {
     border-radius: 15px; 
 }
 
-.post_header {
-    max-height: 40px;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-}
- 
-.story_settings {
-    width: 100%;
-    max-width: 500px;
-    position: fixed;
-    top: 100px;
-}
-
 section {
     min-width: 0;
+}
+
+.message_header {
+    display: grid;
+    grid-template-columns: 60px 100px 1fr;
+    border-bottom: 2px solid black;
+}
+
+.message_header h2 {
+    margin: 30px auto;
+}
+
+.message_header img {
+    margin-left: 5px;
+}
+
+.message_main {
+    display: grid;
+    height: 100%;
+    align-content: end;
+}
+
+.uzenet_on {
+    background-color: #5881fd;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.uzenet {
+    background-color: #45474d;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 300px;
+}
+
+.blokk {
+    margin: 100px auto;
+    text-align: center;
+    color: rgb(80, 80, 80);
+}
+
+.blokk img {
+    max-width: 100px;
 }
 
 .icons {
@@ -173,7 +180,9 @@ article {
     grid-area: ar;
     background-color: var(--main-color);
     min-width: 0;
-    padding-bottom: 1000px; /*Ideiglenes*/
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    padding-bottom: 0;
 }
 
 .story_ring_msg {
@@ -183,19 +192,6 @@ article {
     background: var(--instagram-gradient);
     padding: 5px;
     margin-top: 20px;
-}
-
-.message {
-    border-top: 2px solid black; 
-    border-bottom: 2px solid black; 
-    max-height: 80px;
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    padding-bottom: 15px;
-}
-
-.message a {
-    font-size: 16px;
 }
 
 aside {
