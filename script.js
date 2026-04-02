@@ -12,19 +12,21 @@ if (stories) {
     }, { passive: false });
 }
 
-const post_scroll = document.querySelector(".post_content");
+const post_scrolls = document.querySelectorAll(".post_content");
 
-if (post_scroll) {
+post_scrolls.forEach(function(post_scroll) {
     post_scroll.addEventListener("wheel", function (e) {
-        e.preventDefault();
+        if (post_scroll.scrollWidth > post_scroll.clientWidth) {
+            e.preventDefault();
 
-        const scrollAmount = e.deltaY > 0 ? 100 : -100;
-        post_scroll.scrollBy({
-            left: scrollAmount,
-            behavior: "smooth"
-        });
+            const scrollAmount = e.deltaY > 0 ? 100 : -100;
+            post_scroll.scrollBy({
+                left: scrollAmount,
+                behavior: "smooth"
+            });
+        }
     }, { passive: false });
-}
+});
 // AI
 
 const story_button = document.querySelectorAll(".stories > div"); //AI: .stories > div
@@ -61,3 +63,24 @@ comment_show.forEach(
         });
     }
 )
+
+const videos = document.querySelectorAll(".post_video"); //fele AI
+ 
+const observer = new IntersectionObserver(function(entries) { //Azt nézi a videó a képernyőn van-e vagy sem
+    entries.forEach(function(entry) {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+            video.play();
+        } 
+        else { 
+            video.pause();
+            video.currentTime = 0;
+        }
+    });
+}, {
+    threshold: 0.6 //A videónak a 60% látható kell, hogy legyen a képernyőn a lejátszás megkezdéséhez
+});
+
+videos.forEach(function(video) {
+    observer.observe(video);
+});

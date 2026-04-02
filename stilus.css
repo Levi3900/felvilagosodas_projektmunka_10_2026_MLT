@@ -193,6 +193,27 @@ section {
     height: 500px;
     display: block;
 }
+
+.post_video {
+    width: 500px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+.repost {
+    position: absolute;
+    top: 0;
+    color: white;
+    margin-left: 20px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.video_repost_wrapper {
+    position: relative;
+}
  
 .post_content {
     display: grid;
