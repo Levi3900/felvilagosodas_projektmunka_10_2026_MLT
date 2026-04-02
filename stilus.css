@@ -1,4 +1,4 @@
- :root {
+:root {
 --bg-color: #EEEEEE;
 --text-color: #000000;
 --accent-color: #833AB4;
@@ -11,7 +11,6 @@
     #d6249f 180deg,
     #285AEB 270deg,
     #fdf497 360deg
- 
 );
 }
 
