@@ -102,6 +102,14 @@ header {
     padding: 5px;
 }
 
+.pfp { 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
 article section {
     align-content: end;
     display: grid;
