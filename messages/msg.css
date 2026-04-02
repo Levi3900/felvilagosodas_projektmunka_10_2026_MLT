@@ -102,36 +102,28 @@ header {
     padding: 5px;
 }
 
-#close_button {
-    position: fixed;
-    top: 100px;
-    background-color: black;
-    color: white;
-    border-radius: 15px; 
-}
-
-section {
+article section {
+    align-content: end;
+    display: grid;
+    grid-template-rows: auto;
+    height: 100vh;
+    max-height: 880px;
     min-width: 0;
 }
 
 .message_header {
     display: grid;
-    grid-template-columns: 60px 100px 1fr;
+    grid-template-columns: 60px 100px;
     border-bottom: 2px solid black;
 }
 
-.message_header h2 {
-    margin: 30px auto;
-}
-
-.message_header img {
-    margin-left: 5px;
-}
-
 .message_main {
-    display: grid;
-    height: 100%;
-    align-content: end;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.message_main::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
+    display: none;
 }
 
 .uzenet_on {
@@ -156,7 +148,7 @@ section {
 }
 
 .blokk {
-    margin: 100px auto;
+    margin: 100px auto auto auto;
     text-align: center;
     color: rgb(80, 80, 80);
 }
@@ -181,7 +173,6 @@ article {
     background-color: var(--main-color);
     min-width: 0;
     grid-template-rows: auto 1fr;
-    height: 100vh;
     padding-bottom: 0;
 }
 
@@ -222,25 +213,7 @@ aside {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 1100px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "h"
-        "ar";
-    }
-    
-    aside {
-        display: none;
-    }
-
-    body {
-    grid-template-columns: 1fr 600px;
-    margin: auto;
-    }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     main {
         grid-template-columns: 1fr;
         grid-template-areas: 
