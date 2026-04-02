@@ -195,7 +195,7 @@ article {
     margin-top: 20px;
 }
 
-.message_first {
+#message_first {
     border-top: 2px solid black;
     border-bottom: 2px solid black; 
     max-height: 80px;
@@ -204,7 +204,7 @@ article {
     padding-bottom: 15px;
 }
 
-.message_first a {
+#message_first a {
     font-size: 16px;
 }
 
