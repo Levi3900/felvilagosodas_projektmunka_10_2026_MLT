@@ -19,11 +19,15 @@
       );
 }
 
+body{
+    background-color: var(--bg-color);
+}
 
 main{
     box-sizing: border-box;
+    background-color: var(--main-color);
     max-width: 1200px;
-    margin: auto;   
+    margin: auto    ;   
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -124,9 +128,34 @@ h4{
 #profil_info p{
     display: inline;
     
-
 }
 
 footer{
     grid-area: f;
 }
+
+#gombok {
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 40px;
+}
+
+#gomb1{
+    background-color: rgb(39, 79, 212);
+
+}
+
+button {
+    background-color: #262626;
+    color: white;
+    border: none;
+    border-radius: 8px;      
+    font-weight: bold;
+    padding: 8px 16px;
+    width: 240px;
+    min-width: 100px;
+    height: 32px;
+    margin-right: 10px;
+}
+
