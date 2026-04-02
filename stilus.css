@@ -49,6 +49,10 @@ nav li {
     list-style: none;
 }
 
+p {
+    color: var(--text-color);
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -127,15 +131,23 @@ header {
 }
 
 .show_story {
-    margin: auto;
-    width: 100%;
     display: none;
-    position: fixed; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;            
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    z-index: 9998;
+    justify-content: center;
 }
 
 #close_button {
-    position: fixed;
-    top: 100px;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
     background-color: black;
     color: white;
     border-radius: 15px; 
@@ -147,11 +159,18 @@ header {
     grid-template-columns: 50px 1fr;
 }
  
+.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); /*AI, a top:50% és left:50%al működik együtt, hogy középre helyezze a storyt*/
+}
+
 .story_settings {
     width: 100%;
     max-width: 500px;
-    position: fixed;
-    top: 100px;
+    z-index: 9998;
+    background-color: black;
 }
  
 .story_ring_post {
