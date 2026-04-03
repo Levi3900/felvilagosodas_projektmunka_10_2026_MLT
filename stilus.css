@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 :root {
 --bg-color: #EEEEEE;
 --text-color: #000000;
@@ -375,7 +378,7 @@ aside {
 @media screen and (max-width: 500px) {
     main {
         max-width: 400px;
-        width: 400px;
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "h"
@@ -388,6 +391,7 @@ aside {
 
     body {
         max-width: 400px;
+        width: 100%;
         grid-template-columns: 1fr;
         margin: auto;
         display: block;
@@ -402,9 +406,11 @@ aside {
         gap: 8vh;
         width: 100%;
     }
+
     .stories {
         gap: 40px;
     }
+
     .story_settings {
         max-width: 400px;
     }
@@ -424,11 +430,17 @@ aside {
     }
     
     .post_content {
-        grid-auto-columns: 400px;
-        width: 400px;
+        grid-auto-columns: 100%;
+        width: 100%;
     }
 
     header {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
         max-width: 400px;
     }
 
@@ -450,5 +462,15 @@ aside {
         height: auto;
         z-index: 9998;
         background-color: black;
+    }
+
+    .post_footer p,
+    .post_comment p {
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .comment_valasz {
+        margin-left: 20px;
     }
 }
