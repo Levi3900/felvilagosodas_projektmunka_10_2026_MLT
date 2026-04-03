@@ -371,3 +371,84 @@ aside {
         width: 15px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    main {
+        max-width: 400px;
+        width: 400px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "ar";
+    }
+    
+    aside {
+        display: none;
+    }
+
+    body {
+        max-width: 400px;
+        grid-template-columns: 1fr;
+        margin: auto;
+        display: block;
+        padding-bottom: 60px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    nav ul {
+        gap: 8vh;
+        width: 100%;
+    }
+    .stories {
+        gap: 40px;
+    }
+    .story_settings {
+        max-width: 400px;
+    }
+    
+    .post_username {
+        margin: auto 0 auto 0;
+    }
+
+    .post_img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .post_video {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .post_content {
+        grid-auto-columns: 400px;
+        width: 400px;
+    }
+
+    header {
+        max-width: 400px;
+    }
+
+    #close_button {
+        top: 0;
+    }
+
+    .wrapper {
+        max-width: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+    }
+
+    .story_settings {
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 9998;
+        background-color: black;
+    }
+}
