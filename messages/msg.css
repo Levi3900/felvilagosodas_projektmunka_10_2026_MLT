@@ -2,7 +2,7 @@
 --bg-color: #EEEEEE;
 --text-color: #000000;
 --accent-color: #833AB4;
---main-color: white;
+--main-color: rgb(255, 255, 255);
 --instagram-gradient: conic-gradient(
     from 180deg,
     #fdf497 0deg,
@@ -204,6 +204,7 @@ article section {
 
 .icons_nav {
     max-width: 20px;
+    margin: 2px auto auto auto;
 }
  
 article {
