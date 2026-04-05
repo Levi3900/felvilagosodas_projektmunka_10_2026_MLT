@@ -224,6 +224,13 @@ article {
     font-size: 16px;
 }
 
+.last_message {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .message {
     border-bottom: 2px solid black; 
     max-height: 80px;
@@ -341,4 +348,79 @@ aside {
     nav img {
         width: 15px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        max-width: 400px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "ar";
+    }
+    
+    aside {
+        display: none;
+    }
+
+    body {
+        max-width: 400px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin: auto;
+        display: block;
+        padding-bottom: 60px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    nav ul {
+        gap: 8vh;
+        width: 100%;
+    }
+
+    .last_message {
+        width: 300px;
+    }
+
+    .stories {
+        gap: 40px;
+    }
+
+    .story_settings {
+        max-width: 400px;
+    }
+    #close_button {
+        top: 0;
+    }
+
+    .wrapper {
+        max-width: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+    }
+
+    .story_settings {
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 9998;
+        background-color: black;
+    }
+
+    header {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        max-width: 400px;
+    }
+
 }
