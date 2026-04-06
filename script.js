@@ -30,11 +30,14 @@ post_scrolls.forEach(function(post_scroll) {
 // AI
 
 const story_button = document.querySelectorAll(".stories > div"); //AI: .stories > div
+const story_user = document.querySelectorAll(".story_upload p");
 
 story_button.forEach(
     function (story_button) {
         story_button.addEventListener("click", function (e) { e.preventDefault();
             document.getElementsByClassName("story_settings")[0].src = "assets/" + story_button.id + ".png";
+            document.getElementsByClassName("story_pfp")[0].src = "profilkepek/" + story_button.id + ".jpg";
+            document.getElementsByClassName("story_username")[0].textContent = story_button.id;
             document.getElementsByClassName("show_story")[0].style.display = "block";
         });
     }
