@@ -146,7 +146,7 @@ footer{
 
 }
 
-button {
+#gombok button{
     background-color: #262626;
     color: white;
     border: none;
@@ -158,4 +158,24 @@ button {
     height: 32px;
     margin-right: 10px;
 }
+
+
+#posztok{
+    grid-column: 1 / span 2; /*ez azt csinálja hogy kivinja ezt a részt az article alapértelmezett 1fr 2fr től */
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 400px; 
+    margin-top: 80px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #333; 
+    padding-bottom: 15px;
+}
+
+
+#posztok img {
+    max-width: 40px;
+    height: auto;
+}
+
 
