@@ -141,7 +141,7 @@ footer{
     margin-right: 40px;
 }
 
-#gomb1{
+#gombok #gomb1{
     background-color: rgb(39, 79, 212);
 
 }
@@ -161,7 +161,7 @@ footer{
 
 
 #posztok{
-    grid-column: 1 / span 2; /*ez azt csinálja hogy kivinja ezt a részt az article alapértelmezett 1fr 2fr től */
+    grid-column: 1 / span 2; /*ez azt csinálja hogy kivonja ezt a részt az article alapértelmezett 1fr 2fr től */
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -178,4 +178,14 @@ footer{
     height: auto;
 }
 
+#kepek{
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#kepek img{
+    max-width: 300px;
+
+}
 
