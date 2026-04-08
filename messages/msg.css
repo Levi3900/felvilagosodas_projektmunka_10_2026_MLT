@@ -137,6 +137,7 @@ article section {
 }
 
 .uzenet_on {
+    display: block;
     background-color: #5881fd;
     color: white;
     padding: 7px;
