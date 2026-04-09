@@ -1,3 +1,4 @@
+
 :root {
 --bg-color: #EEEEEE;
 --text-color: #000000;
@@ -20,23 +21,18 @@
 }
 
 body{
-    display: grid;
     background-color: var(--bg-color);
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: 1fr 1200px 1fr ;
-    margin: 0;
-    justify-content: center; 
-
 }
 
 main{
     box-sizing: border-box;
     background-color: var(--main-color);
     max-width: 1200px;
-    margin: 0 auto;   
+    margin: auto    ;   
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
+    "h h"
     "ar ar"
     "f f"
     ;
@@ -44,63 +40,62 @@ main{
     
 }
 
+nav img{
+   max-width: 40px;
+   margin: auto;     
+}
 
 header{
     grid-area: h;
 }
 
-#logo {
+#jobb{
     display: grid;
     grid-auto-flow: column;
     justify-content: right; 
-    gap: 15px;  
+    gap: 15px;
     align-items: center
+
 }
 
-#logo h1 {
-    font-family: "Brush Script MT", cursive;
+#bal{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    gap: 15px;
+    align-items: center;
+
+
 }
 
-#logo img {
+#bal img{
     border-right: 1px solid black; 
     padding-right: 15px;             
     margin-right: 5px;               
-    width:  50px; 
+    height: 35px; 
+
 }
 
-nav {
-    margin-top: 10px;
-    justify-self: start;
-    padding-left: 30px;
-    padding-right: 50px;
-    border-right: 3px solid black;
-    position: sticky;
-    top: 0; 
-    height: 100vh;
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: auto;        
+    gap: 15px;
 }
 
-nav li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--text-color);
+nav p{
+    font-family: "Brush Script MT", cursive;
     font-size: 20px;
+    font-weight: bold;
 }
 
-nav a {
-    display: inline-block;
-    transition: 0.3s;
-}
-
-nav li a:hover {
-    transform: 
-        scale(2.00);
+nav a{
+    text-decoration: none;
+    color: black;
 }
 
 
-article, footer{
+nav, article, footer{
     border: 1px solid black;
 }
 
@@ -117,8 +112,8 @@ h4{
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-left: 220px;
     object-fit: cover;
+    margin-left: 220px;
     margin-top:  35px;
 }
 .story_ring { /*AI által adott ötlet, általam kivitelezett*/
@@ -131,13 +126,8 @@ h4{
     justify-content: center;
 }
 
-#profil_info{
-    margin-left: 40px;
-}
-
-
 #profil_info p{
-    display: inline-block;
+    display: inline;
     
 }
 
@@ -197,12 +187,5 @@ footer{
 
 #kepek img{
     max-width: 300px;
-    height: 400px;
 
-
-}
-
-footer p{
-    font-size: 12px;
-    margin: auto;
 }
