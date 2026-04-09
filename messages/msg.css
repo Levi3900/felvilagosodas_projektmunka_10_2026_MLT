@@ -270,6 +270,10 @@ aside {
     margin-left: 10px;
 }
 
+#nincsvisszaterites {
+    font-size: 1px;
+}
+
 @media screen and (max-width: 1000px) {
     main {
         grid-template-columns: 1fr;

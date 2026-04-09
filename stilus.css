@@ -119,6 +119,7 @@ header {
     overflow-x: auto;
     overflow-y: hidden;
     padding: 5px;
+    text-align: center;
 }
  
 .stories::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
@@ -435,6 +436,7 @@ aside {
     }
 
     nav ul {
+        width: 400px;
         gap: 8vh;
         width: 100%;
     }
