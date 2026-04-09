@@ -277,7 +277,7 @@ article {
 }
 
 .post_interaction {
-    max-width: 120px;
+    max-width: 200px;
     padding: 5px;
     display: grid;
     grid-auto-flow: column;
@@ -311,7 +311,7 @@ aside {
     width: 300px;
     margin: 0;
     grid-area: as;
-    height: 300px;
+    height: 400px;
     position: sticky;
     top: 0;
 }
