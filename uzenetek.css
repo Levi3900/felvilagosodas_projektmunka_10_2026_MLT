@@ -4,15 +4,19 @@
 --accent-color: #833AB4;
 --main-color: white;
 --instagram-gradient: conic-gradient(
-    from 180deg,
-    #fdf497 0deg,
-    #fdf497 30deg,
-    #fd5949 90deg,
-    #d6249f 180deg,
-    #285AEB 270deg,
-    #fdf497 360deg
- 
-);
+
+        #f1ff33,
+        #fff344,
+        #fa7e1e,
+        #d62976,
+        #d62976,
+        #d62976,
+        #d62976,
+        #fa7e1e,
+        #fff344,
+        #f1ff33
+
+      );
 }
 
 #logo {
