@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="instagram">
 <meta name="keywords" content="instagram, social media, felvilágosodás"> 
-<link rel="stylesheet" href="uzenetek.css">
+<link rel="stylesheet" href="stilus.css">
 <title>Göröcs Máté - Kovács Levente - Nagy Tamás</title>
 </head>
 <body>
     <nav>
         <div id="logo">
-            <a href="../index.html"><img src="istagram logos/instagram-logo.png" alt="logo"></a>
+            <a href="index.html"><img src="istagram logos/instagram-logo.png" alt="logo"></a>
             <a href="index.html"><h1>Instagram</h1></a>
         </div>
-    <ul>
-        <li><a href="index.html"><img src="istagram logos/house.svg" alt="" class="icons_nav">Kezdőlap</a></li> <!--később megváltoztatom a képet-->
-        <li><a href="felmeres.html"><img src="istagram logos/mail.svg" alt="" class="icons_nav">Felmérés</a></li>
-        <li><a href="uzenetek.html"><img src="istagram logos/message-circle.svg" alt="" class="icons_nav">Üzenetek</a></li>
-        <li><a href="#"><img src="istagram logos/users.svg" alt="" class="icons_nav">Profil</a></li> <!--később megváltoztatom a képet-->
-    </ul>
-</nav>
+        <ul>
+            <li><a href="index.html"><img src="istagram logos/house.svg" alt="" class="icons_nav">Kezdőlap</a></li>
+            <li><a href="felmeres.html"><img src="istagram logos/mail.svg" alt="" class="icons_nav">Felmérés</a></li>
+            <li><a href="uzenetek.html"><img src="istagram logos/message-circle.svg" alt="" class="icons_nav">Üzenetek</a></li>
+            <li><a href="#"><img src="istagram logos/users.svg" alt="" class="icons_nav">Profil</a></li>
+        </ul>
+    </nav>
 <main>
     <div class="show_story">
         <div class="wrapper"> <!--A gombhoz szükséges-->
@@ -36,7 +36,7 @@
     </div>
     <header>
         <div class="stories">
-            <div id="napoleon_611"> <!--ide a kép neve jön, amit a storyba szeretnél felhasználni-->
+            <div id="napoleon_611"> <!--Ide a felhasználóneve jön az embernek, a felhasználónév egyezzen meg a story képének és a profilkepek mappába helyezett képnek is a nevével-->
                 <a href="#"><img src="assets/napoleon_profilkep.jpg" alt="profilkép" class="story_ring"></a>
                 <p>napoleon_611</p>
             </div>
@@ -59,61 +59,32 @@
         </div>
     </header>
     <article>
-        <section id="message_first">
-            <div>
-                <img src="assets/napoleon_profilkep.jpg" alt="" class="story_ring_msg">
-            </div>
-            <a href="messages/napoleon.html">
-            <div>
-                <h3>napoleon_611</h3>
-                <p class="last_message">Nem is kellesz, száműzlek Franciaországból! </p>
-            </div>
-            </a>
-        </section>
-        <section class="message">
-            <div>
-                <img src="assets/homerosz.jpg" alt="" class="kep_msg">
-            </div>
-            <a href="messages/groupchat.html">
-            <div>
-                <h3>Iliász fordítása</h3>
-                <p class="last_message"><strong>KazyFerenc_: </strong>Ezen nem érdemes vitázni, mindegy ki fordíttta</p>
-            </div>
-            </a>
-        </section>
-        <section class="message">
-            <div>
-                <img src="assets/newton.webp" alt="" class="story_ring_msg">
-            </div>
-            <a href="messages/newton.html">
-            <div>
-                <h3>nograv1tyhahaha67</h3>
-                <p class="last_message">बस इतना ही, इसकी भी रिपोर्ट कर दी जाएगी।</p>
-            </div>
-            </a>
-        </section>
-        <section class="message">
-            <div>
-                <img src="assets/kazinczy.jpg" alt="" class="story_ring_msg">
-            </div>
-            <a href="messages/Kazinczy.html">
-            <div>
-                <h3>KazyFerenc_</h3>
-                <p class="last_message">Azt hittem bízhatok benned! Nagyot csalódtam ma</p>
-            </div>
-            </a>
-        </section>
-        <section class="message">
-            <div>
-                <img src="profilkepek/Klcsey__.jpg" alt="" class="story_ring_msg">
-            </div>
-            <a href="messages/kolcsey.html">
-            <div>
-                <h3>Klcsey__</h3>
-                <p class="last_message">Azt hittem bízhatok benned! Nagyot csalódtam ma</p>
-            </div>
-            </a>
-        </section>
+        <h1 style="text-align: center;">Elégedettségi felmérés</h1>
+        <form>
+            <p>Mi az az enciklopédia?</p>
+            <input type="radio" id="1correct" name="" value="1">
+                <label for="1correct">Egy könyv amibe a világ összes tudását próbálták belesűríteni</label><br>
+            <input type="radio" id="1incorrect1" name="" value="2">
+                <label for="1incorrect1">A Biblia egy változata</label><br>
+            <input type="radio" id="1incorrect2" name="" value="3">
+                <label for="1incorrect2">Egy politikával foglalkozó újság a felvilágosodás korából</label>
+
+            <p>Mi történt az Iliász-pör során?</p>
+            <input type="radio" id="2incorrect1" name="" value="1">
+                <label for="2incorrect1">Kölcsey Ferenc a saját neve alatt adta ki a Vályi Nagy Ferenc által részlegesen lefordított Iliászt</label><br>
+            <input type="radio" id="2correct" name="" value="2">
+                <label for="2correct">Vályi Nagy Ferenc a saját neve alatt adta ki a Kölcsey Ferenc által részlegesen lefordított Iliászt</label><br>
+            <input type="radio" id="2incorrect2" name="" value="3">
+                <label for="2incorrect2">Kazinczy Ferenc nem értékelte, hogy Kölcsey Vályi Nagy Ferenc fordításait a saját neve alatt adta ki</label>
+
+            <p>Mi volt a felvilágosodás célja?</p>
+            <input type="radio" id="3incorrect1" name="" value="1">
+                <label for="3incorrect1">A feudalista uralokodók megerősítése</label><br>
+            <input type="radio" id="3correct" name="" value="2">
+                <label for="3correct">A tudományra és az észre alapozni a világot</label><br>
+            <input type="radio" id="3incorrect2" name="" value="3">
+                <label for="3incorrect2">Az érzelmek előtérbe hozatala</label>
+        </form>
     </article>
     <aside>
         <div id="aside_content">
