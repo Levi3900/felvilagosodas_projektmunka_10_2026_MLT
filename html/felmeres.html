@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="instagram">
+<meta name="keywords" content="instagram, social media, felvilágosodás"> 
+<link rel="stylesheet" href="../css/stilus.css">
+<title>Göröcs Máté - Kovács Levente - Nagy Tamás</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <a href="../index.html"><img src="../istagram logos/instagram-logo.png" alt="logo"></a>
+            <a href="../index.html"><h1>Instagram</h1></a>
+        </div>
+        <ul>
+            <li><a href="../index.html"><img src="../istagram logos/house.svg" alt="" class="icons_nav">Kezdőlap</a></li>
+            <li><a href="felmeres.html"><img src="../istagram logos/mail.svg" alt="" class="icons_nav">Felmérés</a></li>
+            <li><a href="uzenetek.html"><img src="../istagram logos/message-circle.svg" alt="" class="icons_nav">Üzenetek</a></li>
+            <li><a href="#"><img src="../istagram logos/users.svg" alt="" class="icons_nav">Profil</a></li>
+        </ul>
+    </nav>
+<main>
+    <div class="show_story">
+        <div class="wrapper"> <!--A gombhoz szükséges-->
+            <img src="../assets/napoleon_611.png" alt="" class="story_settings">
+            <div class="story_uploader">
+                <img class="story_pfp" src="../assets/placeholder.png" alt="">
+                <p class="story_username">placeholder</p>
+            </div> 
+            <button id="close_button" onclick="close_story(event)">
+                X
+            </button>
+        </div>
+    </div>
+    <header>
+        <div class="stories">
+            <div id="napoleon_611"> <!--Ide a felhasználóneve jön az embernek, a felhasználónév egyezzen meg a story képének és a profilkepek mappába helyezett képnek is a nevével-->
+                <a href="#"><img src="../assets/napoleon_profilkep.jpg" alt="profilkép" class="story_ring"></a>
+                <p>napoleon_611</p>
+            </div>
+            <div id="KazyFerenc_"> 
+                <a href="#"><img src="../assets/kazinczy.jpg" alt="profilkép" class="story_ring"></a>
+                <p>KazyFerenc_</p>
+            </div>
+            <div id="Klcsey__">
+                <a href="#"><img src="../profilkepek/Klcsey__.jpg" alt="profilkép" class="story_ring"></a>
+                <p>Klcsey__</p>
+            </div>
+            <div id="placeholder">
+                <a href="#"><img src="../assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
+                <p>default_profile</p>
+            </div>
+            <div id="placeholder">
+                <a href="#"><img src="../assets/noprofile.jpg" alt="profilkép" class="story_ring"></a>
+                <p>default_profile</p>
+            </div>
+        </div>
+    </header>
+    <article>
+        <!--Nyilván nem egy elégedettségi felmérés, csak a "kvíz" számomra nem odaíllőnek érződött-->
+        <h1 style="text-align: center;">Elégedettségi felmérés</h1>
+        <button type="button" onclick="ellenorzes()">Beküldés</button>
+        <form>
+            <p class="question_title">Mi az az enciklopédia?</p>
+                <label><input type="radio" name="elso" value="1" class="question_item"> Egy könyv amibe a világ összes tudását próbálták belesűríteni</label><br>
+                <label><input type="radio" name="elso" value="2" class="question_item"> A Biblia egy változata</label><br>
+                <label><input type="radio" name="elso" value="3" class="question_item"> Egy politikával foglalkozó újság a felvilágosodás korából</label>
+
+            <p class="question_title">Mi adott okot az Iliász pörre?</p>
+                <label><input type="radio" name="masodik" value="1" class="question_item"> Kölcsey Ferenc a saját neve alatt adta ki a Vályi Nagy Ferenc által részlegesen lefordított Iliászt</label><br>
+                <label><input type="radio" name="masodik" value="2" class="question_item"> Vályi Nagy Ferenc a saját neve alatt adta ki a Kölcsey Ferenc által részlegesen lefordított Iliászt</label><br>
+                <label><input type="radio" name="masodik" value="3" class="question_item"> Kazinczy Ferenc nem értékelte, hogy Kölcsey Vályi Nagy Ferenc fordításait a saját neve alatt adta ki</label>
+
+            <p class="question_title">Mi volt a felvilágosodás célja?</p>
+                <label><input type="radio" name="harmadik" value="1" class="question_item"> A feudalista uralkodók megerősítése</label><br>
+                <label><input type="radio" name="harmadik" value="2" class="question_item"> A tudományra és az észre alapozni a világot</label><br>
+                <label><input type="radio" name="harmadik" value="3" class="question_item"> Az érzelmek előtérbe hozatala</label>
+
+            <p class="question_title">Ki írta meg a Magyar Himnuszt?</p>
+                <label><input type="radio" name="negyedik" value="1" class="question_item"> Kölcsey Ferenc</label><br>
+                <label><input type="radio" name="negyedik" value="2" class="question_item"> Kazinczy Ferenc</label><br>
+                <label><input type="radio" name="negyedik" value="3" class="question_item"> Vörösmarty Mihály</label>
+
+            <p class="question_title">Mit hirdetett Montesquieu?</p>
+                <label><input type="radio" name="otodik" value="1" class="question_item"> Nem hirdetett "úgy" semmit, egyszerűen egy népszerű pap volt</label><br>
+                <label><input type="radio" name="otodik" value="2" class="question_item"> Az egyházi uralom megerősítését</label><br>
+                <label><input type="radio" name="otodik" value="3" class="question_item"> A hatalmi ágak szétválasztását</label>
+
+            <p class="question_title">placeholder</p>
+                <label><input type="radio" name="hatodik" value="1" class="question_item"> placeholder</label><br>
+                <label><input type="radio" name="hatodik" value="2" class="question_item"> placeholder</label><br>
+                <label><input type="radio" name="hatodik" value="3" class="question_item"> C</label>
+
+            <p class="question_title">placeholder</p>
+                <label><input type="radio" name="hetedik" value="1" class="question_item"> C</label><br>
+                <label><input type="radio" name="hetedik" value="2" class="question_item"> placeholder</label><br>
+                <label><input type="radio" name="hetedik" value="3" class="question_item"> placeholder</label>
+
+            <p class="question_title">placeholder</p>
+                <label><input type="radio" name="nyolcadik" value="1" class="question_item"> placeholder</label><br>
+                <label><input type="radio" name="nyolcadik" value="2" class="question_item"> C</label><br>
+                <label><input type="radio" name="nyolcadik" value="3" class="question_item"> placeholder</label>
+        </form>
+        <p id="eredmeny"></p>
+        <img src="../assets/felmeres.png" alt="" style="max-width: 500px; padding-bottom: 10px; width: 100%;">
+    </article>
+    <aside>
+        <div id="aside_content">
+            <h1>Javasolt profilok:</h1> 
+            <section class="aside_profil">
+            <a href="Rousseau.html"><img src="../assets/Rousseau.jpg" alt="kep" class="story_ring"></a>
+            <div>
+                    <h3><a href="Rousseau.html">rousseau_123</a></h2>
+                <div>
+                    <p><strong>3</strong> bejegyzés</p>
+                    <p><strong>4</strong> követő</p>
+                    <p><strong>7</strong> követés</p>
+                </div>
+            </div>
+            </section>
+            <section class="aside_profil">
+            <img src="../assets/napoleon_profilkep.jpg" alt="kep" class="story_ring">
+            <div>
+                    <h3>napoleon_611</h2>
+                <div>
+                    <p><strong>4</strong> bejegyzés</p>
+                    <p><strong>67</strong> követő</p>
+                    <p><strong>4</strong> követés</p>
+                </div>
+            </div>
+            </section>
+        </div>
+    </aside>
+</main>
+ 
+<script src="../js/script.js"></script>
+</body>
+</html>
+
+
+

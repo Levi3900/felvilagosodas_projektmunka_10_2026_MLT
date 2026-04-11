@@ -347,6 +347,8 @@ aside {
     text-align: center;
 }
 
+
+
 button {
     background-color: white;
     margin: auto auto 5px auto;
@@ -361,6 +363,11 @@ article button:hover {
     scale: 2.00;
     margin: 10px auto 15px auto;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.question_item {
+    margin: 5px 5px 10px 5px;
+    text-align: justify;
 }
 
 #eredmeny {
@@ -472,8 +479,9 @@ article button:hover {
     }
 
     nav ul {
+        margin: auto;
         width: 400px;
-        gap: 8vh;
+        gap: 7vh;
         width: 100%;
     }
 

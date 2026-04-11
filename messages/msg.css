@@ -378,7 +378,9 @@ aside {
     }
 
     nav ul {
-        gap: 8vh;
+        margin: auto;
+        width: 400px;
+        gap: 7vh;
         width: 100%;
     }
     header {
