@@ -210,3 +210,162 @@ footer p{
     font-size: 12px;
 
 }
+
+
+@media (max-width: 768px){
+
+    body{
+        display: block;
+        margin: 0;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-bottom: 90px;
+        box-sizing: border-box;
+    }
+
+    article{
+        grid-area: ar;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #pfp{
+        width: 110px;
+        height: 110px;
+        margin-left: 20px;
+        margin-top: 20px;
+        justify-self: center;
+    }
+
+    #profil_info{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    #profil_info h2{
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    #profil_info p{
+        display: block;
+        margin: 4px 0;
+    }
+
+    #profil_info h4{
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    #gombok{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    #gombok button{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #posztok{
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        column-gap: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    #kepek{
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #kepek img{
+        width: 100%;
+        max-width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    footer{
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    footer p{
+        display: inline-block;
+        margin: 6px;
+        font-size: 11px;
+    }
+
+    nav {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        margin-left: 0;
+        padding: 0;
+        height: auto;
+        border: none;
+        background-color: var(--main-color);
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav li a:hover {
+        transform: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        background-color: var(--main-color);
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    nav li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    nav a {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    nav img {
+        width: 15px;
+    }
+}
