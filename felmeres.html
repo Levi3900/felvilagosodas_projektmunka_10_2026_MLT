@@ -59,32 +59,52 @@
         </div>
     </header>
     <article>
+        <!--Nyilván nem egy elégedettségi felmérés, csak a "kvíz" számomra nem odaíllőnek érződött-->
         <h1 style="text-align: center;">Elégedettségi felmérés</h1>
+        <button type="button" onclick="ellenorzes()">Beküldés</button>
         <form>
-            <p>Mi az az enciklopédia?</p>
-            <input type="radio" id="1correct" name="" value="1">
-                <label for="1correct">Egy könyv amibe a világ összes tudását próbálták belesűríteni</label><br>
-            <input type="radio" id="1incorrect1" name="" value="2">
-                <label for="1incorrect1">A Biblia egy változata</label><br>
-            <input type="radio" id="1incorrect2" name="" value="3">
-                <label for="1incorrect2">Egy politikával foglalkozó újság a felvilágosodás korából</label>
+            <p class="question_title">Mi az az enciklopédia?</p>
+                <label><input type="radio" name="elso" value="1"> Egy könyv amibe a világ összes tudását próbálták belesűríteni</label><br>
+                <label><input type="radio" name="elso" value="2"> A Biblia egy változata</label><br>
+                <label><input type="radio" name="elso" value="3"> Egy politikával foglalkozó újság a felvilágosodás korából</label>
 
-            <p>Mi történt az Iliász-pör során?</p>
-            <input type="radio" id="2incorrect1" name="" value="1">
-                <label for="2incorrect1">Kölcsey Ferenc a saját neve alatt adta ki a Vályi Nagy Ferenc által részlegesen lefordított Iliászt</label><br>
-            <input type="radio" id="2correct" name="" value="2">
-                <label for="2correct">Vályi Nagy Ferenc a saját neve alatt adta ki a Kölcsey Ferenc által részlegesen lefordított Iliászt</label><br>
-            <input type="radio" id="2incorrect2" name="" value="3">
-                <label for="2incorrect2">Kazinczy Ferenc nem értékelte, hogy Kölcsey Vályi Nagy Ferenc fordításait a saját neve alatt adta ki</label>
+            <p class="question_title">Mi történt az Iliász-pör során?</p>
+                <label><input type="radio" name="masodik" value="1"> Kölcsey Ferenc a saját neve alatt adta ki a Vályi Nagy Ferenc által részlegesen lefordított Iliászt</label><br>
+                <label><input type="radio" name="masodik" value="2"> Vályi Nagy Ferenc a saját neve alatt adta ki a Kölcsey Ferenc által részlegesen lefordított Iliászt</label><br>
+                <label><input type="radio" name="masodik" value="3"> Kazinczy Ferenc nem értékelte, hogy Kölcsey Vályi Nagy Ferenc fordításait a saját neve alatt adta ki</label>
 
-            <p>Mi volt a felvilágosodás célja?</p>
-            <input type="radio" id="3incorrect1" name="" value="1">
-                <label for="3incorrect1">A feudalista uralokodók megerősítése</label><br>
-            <input type="radio" id="3correct" name="" value="2">
-                <label for="3correct">A tudományra és az észre alapozni a világot</label><br>
-            <input type="radio" id="3incorrect2" name="" value="3">
-                <label for="3incorrect2">Az érzelmek előtérbe hozatala</label>
+            <p class="question_title">Mi volt a felvilágosodás célja?</p>
+                <label><input type="radio" name="harmadik" value="1"> A feudalista uralkodók megerősítése</label><br>
+                <label><input type="radio" name="harmadik" value="2"> A tudományra és az észre alapozni a világot</label><br>
+                <label><input type="radio" name="harmadik" value="3"> Az érzelmek előtérbe hozatala</label>
+
+            <p class="question_title">Ki írta meg a Magyar Himnuszt?</p>
+                <label><input type="radio" name="negyedik" value="1"> Kölcsey Ferenc</label><br>
+                <label><input type="radio" name="negyedik" value="2"> Kazinczy Ferenc</label><br>
+                <label><input type="radio" name="negyedik" value="3"> Vörösmarty Mihály</label>
+
+            <p class="question_title">Mit hirdetett Montesquieu?</p>
+                <label><input type="radio" name="otodik" value="1"> Nem hirdetett "úgy" semmit, egyszerűen egy népszerű pap volt</label><br>
+                <label><input type="radio" name="otodik" value="2"> Az egyházi uralom megerősítését</label><br>
+                <label><input type="radio" name="otodik" value="3"> A hatalmi ágak szétválasztását</label>
+
+            <p class="question_title">placeholder</p>
+                <label><input type="radio" name="hatodik" value="1"> placeholder</label><br>
+                <label><input type="radio" name="hatodik" value="2"> placeholder</label><br>
+                <label><input type="radio" name="hatodik" value="3"> C</label>
+
+            <p class="question_title">placeholder</p>
+                <label><input type="radio" name="hetedik" value="1"> C</label><br>
+                <label><input type="radio" name="hetedik" value="2"> placeholder</label><br>
+                <label><input type="radio" name="hetedik" value="3"> placeholder</label>
+
+            <p class="question_title">placeholder</p>
+                <label><input type="radio" name="nyolcadik" value="1"> placeholder</label><br>
+                <label><input type="radio" name="nyolcadik" value="2"> C</label><br>
+                <label><input type="radio" name="nyolcadik" value="3"> placeholder</label>
         </form>
+        <p id="eredmeny"></p>
+        <img src="assets/felmeres.png" alt="" style="max-width: 500px; padding-bottom: 10px; width: 100%;">
     </article>
     <aside>
         <div id="aside_content">

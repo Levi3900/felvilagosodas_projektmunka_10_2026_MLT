@@ -87,3 +87,36 @@ const observer = new IntersectionObserver(function(entries) { //Azt nézi a vide
 videos.forEach(function(video) {
     observer.observe(video);
 });
+
+function ellenorzes() {
+    let pontszam = 0;
+    let i = "";
+
+    const valaszok = {
+        elso: "1",
+        masodik: "2",
+        harmadik: "2",
+        negyedik: "1",
+        otodik: "3",
+        hatodik: "3",
+        hetedik: "1",
+        nyolcadik: "2"
+    }
+
+    for (i in valaszok) {
+        const kijelolt = document.querySelector("input[name='" + i + "']:checked");
+        
+        if (kijelolt && kijelolt.value === valaszok[i]) {
+            pontszam = pontszam + 1;
+        }
+    }
+
+    if (pontszam < 4) {
+        document.getElementById("eredmeny").textContent = "Eredmény: Nyaktiló általi humánus kivégzés"
+        document.getElementById("eredmeny").style.display = "block";
+    }
+    else {
+        document.getElementById("eredmeny").textContent = "Eredmény:" +pontszam + "/8";
+        document.getElementById("eredmeny").style.display = "block";
+    }
+}
