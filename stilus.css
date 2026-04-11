@@ -356,7 +356,7 @@ button {
     transition: 0.2s ease;
 }
 
-button:hover {
+article button:hover {
     background: var(--instagram-gradient);
     scale: 2.00;
     margin: 10px auto 15px auto;
