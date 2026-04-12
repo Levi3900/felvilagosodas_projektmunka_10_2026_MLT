@@ -87,7 +87,7 @@ const observer = new IntersectionObserver(function(entries) { //Azt nézi a vide
 videos.forEach(function(video) {
     observer.observe(video);
 });
-
+let novkedes = 30
 function ellenorzes() {
     let pontszam = 0;
     let i = "";
@@ -103,6 +103,7 @@ function ellenorzes() {
         nyolcadik: "2"
     }
     const fontos = document.getElementById("lowkirk");
+    const fontosabb = document.getElementById("highkirk")
         if (fontos.checked) {
             for (i in valaszok) {
                 const kijelolt = document.querySelector("input[name='" + i + "']:checked");
@@ -120,4 +121,9 @@ function ellenorzes() {
                 document.getElementById("eredmeny").style.display = "block";
             }
         }
-    } 
+    else {
+        fontosabb.style.color = "red";
+        fontosabb.style.fontSize = novkedes + "px";
+        novkedes = novkedes + 30;
+    }
+} 
