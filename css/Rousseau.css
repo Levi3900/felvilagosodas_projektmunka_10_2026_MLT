@@ -192,12 +192,14 @@ footer{
 #kepek{
     grid-column: 1 / span 2;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 285px;
+    height: 430px;
 }
 
 #kepek img{
-    max-width: 300px;
-    height: 400px;
+    width: 285px;
+    height: 430px;
 
 
 }
@@ -212,7 +214,7 @@ footer p{
 }
 
 
-@media (max-width: 1100px){
+@media (max-width: 1300px){
 
     body{
         display: block;
@@ -225,6 +227,40 @@ footer p{
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-bottom: 12px;
+        max-width: 100%;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 200px;
+        height: auto;
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #gombok{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        max-width: 90%;
+        margin-right: 0;
+    }
+
+    #gombok button{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #gomb1{
+        grid-column: 1;
+    }
+
+    #gomb2{
+        grid-column: 2;
     }
 
 
@@ -255,7 +291,7 @@ footer p{
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 1100px;
+        width: 1300px;
         height: auto;
         margin: 0 auto;
         padding: 0;
@@ -280,4 +316,378 @@ footer p{
         width: 15px;
     }
 }
+
+@media (max-width: 1171px){
+
+    nav ul {
+
+        width: 1171px;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 160px;
+        height: auto;
+    }
+
+    #kepek img{
+        height: 340px;
+        width: 240px;
+    }
+
+
+
+}
+
+
+@media (max-width: 1060px){
+
+    nav ul {
+
+        width: 1060px;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 140px;
+        height: auto;
+    }
+
+    #kepek img{
+        height: 340px;
+        width: 240px;
+    }
+
+
+
+}
+
+
+@media (max-width: 965px){
+
+    nav ul {
+
+        width: 965px;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 120px;
+        height: auto;
+    }
+
+    #kepek img{
+        height: 340px;
+        width: 240px;
+    }
+
+
+
+}
+
+@media (max-width: 875px){
+
+    nav ul {
+
+        width: 875px;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 100px;
+        height: auto;
+    }
+
+    #kepek img{
+        height: 340px;
+        width: 240px;
+    }
+
+
+
+}
+
+
+@media (max-width: 875px){
+
+    #pfp{
+        width: 130px;
+        height: 130px;
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+
+    nav ul {
+
+        width: 800px;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 80px;
+        height: auto;
+    }
+
+    #kepek img{
+        height: 300px;
+        width: 200px;
+    }
+
+
+
+}
+
+
+@media (max-width: 735px){
+
+    #pfp{
+        width: 130px;
+        height: 130px;
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+
+
+    nav ul {
+
+        width: 735px;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 60px;
+        height: auto;
+    }
+
+    #kepek img{
+        height: 300px;
+        width: 200px;
+    }
+
+
+
+}
+
+
+@media (max-width: 670px){
+
+    #pfp{
+        width: 130px;
+        height: 130px;
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+
+
+    nav ul {
+
+        width: 670px;
+    }
+
+    #kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10px;
+        height: auto;
+    }
+
+    #kepek img{
+        height: 300px;
+        width: 200px;
+    }
+
+
+
+}
+
+
+@media (max-width: 615px){
+
+    #pfp{
+        width: 130px;
+        height: 130px;
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+
+
+    nav ul {
+
+        width: 615px;
+    }
+
+    #kepek{
+
+        margin: 40px;
+    }
+
+    #kepek img{
+        height: 250px;
+        width: 160px;
+    }
+
+
+
+}
+
+@media (max-width: 570px){
+
+
+    nav ul {
+        width: 570px;
+    }
+
+    #kepek{
+        margin: 20px;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 530px){
+
+
+    #pfp{
+        width: 110px;
+        height: 110px;
+        margin-left: 50px;
+
+    }
+
+    nav ul {
+        width: 530px;
+    }
+
+    
+    #kepek{
+        margin: 5px;
+    }
+
+    
+
+
+
+}
+
+@media (max-width: 500px){
+
+
+    #pfp{
+        width: 110px;
+        height: 110px;
+        margin-left: 50px;
+
+    }
+
+    #posztok{
+    column-gap: 200px; 
+    }
+    nav ul{
+        width: 500px;
+    }
+
+    #kepek{
+        margin: 30px;
+    }
+
+    #kepek img{
+        height: 220px;
+        width: 140px;
+    }
+
+    
+
+}
+
+@media (max-width: 470px){
+
+
+    #pfp{
+        width: 110px;
+        height: 110px;
+        margin-left: 50px;
+        margin-top: 90px;
+
+    }
+
+    #gombok{
+        width: small;
+
+        
+    }
+
+    #posztok{
+    column-gap: 200px; 
+    }
+    nav ul{
+        width: 470px;
+    }
+
+    #kepek{
+        margin: 10px;
+    }
+
+    #kepek img{
+        height: 220px;
+        width: 140px;
+    }
+
+    h4{
+        font-size: smaller;
+    }
+
+    
+
+}
+
+@media (max-width: 375px){
+
+
+    #pfp{
+        width: 95px;
+        height: 95px;
+        margin-left: 0;
+        margin-top: 90px;
+
+    }
+
+    #gombok{
+        width: small;
+
+        
+    }
+
+    #posztok{
+    column-gap: 200px; 
+    }
+    nav ul{
+        width: 375px;
+    }
+
+    #kepek{
+        margin: 5px;
+    }
+
+    #kepek img{
+        height: 210px;
+        width: 120px;
+    }
+
+    h4{
+        font-size: smaller;
+    }
+
+    
+
+}
+
 
