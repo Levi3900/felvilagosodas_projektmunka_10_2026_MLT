@@ -87,6 +87,8 @@ const observer = new IntersectionObserver(function(entries) { //Azt nézi a vide
 videos.forEach(function(video) {
     observer.observe(video);
 });
+
+
 let novkedes = 30
 function ellenorzes() {
     let pontszam = 0;
