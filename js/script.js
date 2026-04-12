@@ -87,7 +87,7 @@ const observer = new IntersectionObserver(function(entries) { //Azt nézi a vide
 videos.forEach(function(video) {
     observer.observe(video);
 });
-
+let novkedes = 30
 function ellenorzes() {
     let pontszam = 0;
     let i = "";
@@ -102,21 +102,28 @@ function ellenorzes() {
         hetedik: "1",
         nyolcadik: "2"
     }
+    const fontos = document.getElementById("lowkirk");
+    const fontosabb = document.getElementById("highkirk")
+        if (fontos.checked) {
+            for (i in valaszok) {
+                const kijelolt = document.querySelector("input[name='" + i + "']:checked");
+                if (kijelolt && kijelolt.value === valaszok[i]) {
+                    pontszam = pontszam + 1;
+                }
+            }
 
-    for (i in valaszok) {
-        const kijelolt = document.querySelector("input[name='" + i + "']:checked");
-        
-        if (kijelolt && kijelolt.value === valaszok[i]) {
-            pontszam = pontszam + 1;
+            if (pontszam < 4) {
+                document.getElementById("eredmeny").textContent = "Eredmény: Nyaktiló általi humánus kivégzés"
+                document.getElementById("eredmeny").style.display = "block";
+            }
+            else {
+                document.getElementById("eredmeny").textContent = "Eredmény:" +pontszam + "/8";
+                document.getElementById("eredmeny").style.display = "block";
+            }
         }
-    }
-
-    if (pontszam < 4) {
-        document.getElementById("eredmeny").textContent = "Eredmény: Nyaktiló általi humánus kivégzés"
-        document.getElementById("eredmeny").style.display = "block";
-    }
     else {
-        document.getElementById("eredmeny").textContent = "Eredmény:" +pontszam + "/8";
-        document.getElementById("eredmeny").style.display = "block";
+        fontosabb.style.color = "red";
+        fontosabb.style.fontSize = novkedes + "px";
+        novkedes = novkedes + 30;
     }
-}
+} 
