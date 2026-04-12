@@ -102,21 +102,22 @@ function ellenorzes() {
         hetedik: "1",
         nyolcadik: "2"
     }
+    const fontos = document.getElementById("lowkirk");
+        if (fontos.checked) {
+            for (i in valaszok) {
+                const kijelolt = document.querySelector("input[name='" + i + "']:checked");
+                if (kijelolt && kijelolt.value === valaszok[i]) {
+                    pontszam = pontszam + 1;
+                }
+            }
 
-    for (i in valaszok) {
-        const kijelolt = document.querySelector("input[name='" + i + "']:checked");
-        
-        if (kijelolt && kijelolt.value === valaszok[i]) {
-            pontszam = pontszam + 1;
+            if (pontszam < 4) {
+                document.getElementById("eredmeny").textContent = "Eredmény: Nyaktiló általi humánus kivégzés"
+                document.getElementById("eredmeny").style.display = "block";
+            }
+            else {
+                document.getElementById("eredmeny").textContent = "Eredmény:" +pontszam + "/8";
+                document.getElementById("eredmeny").style.display = "block";
+            }
         }
-    }
-
-    if (pontszam < 4) {
-        document.getElementById("eredmeny").textContent = "Eredmény: Nyaktiló általi humánus kivégzés"
-        document.getElementById("eredmeny").style.display = "block";
-    }
-    else {
-        document.getElementById("eredmeny").textContent = "Eredmény:" +pontszam + "/8";
-        document.getElementById("eredmeny").style.display = "block";
-    }
-}
+    } 
