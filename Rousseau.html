@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,20 @@
     </nav>
     <main>
         <article>
-
+            <div class="show_post">
+                <div class="wrapper"> <!--A gombhoz szükséges-->
+                    <img src="assets/placeholder.png" alt="" class="post_settings">
+                    <button id="close_button" onclick="close_post()">
+                        X
+                    </button>
+                    <div class="post_aside">
+                        <p class="post_username">Rousseau_123</p>
+                        <p><b>kommentek: </b></p>
+                        <div class="comment_fill">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <img id="pfp" src="profilkepek/Rousseau_123.jpg " alt="kep" class="story_ring">
             <section id="profil_info">
                 <h2>rousseau_123</h2>
@@ -52,11 +65,11 @@
             </section>
             <section id="kepek">
 
-                <img src="assets/vragszedes.jpg" alt="">
-                <img src="assets/Tarsadalmi_szerzodes.jpg" alt="">
-                <img src="assets/EmileTitle.png" alt="">
-                <img src="assets/rsseau.png" alt="">
-                <img src="assets/rsseau2.png" alt="">
+                <a href="#" id="1R"><img src="profil_posztok/1R.png" alt=""></a>
+                <a href="#" id="2R"><img src="profil_posztok/2R.png" alt=""></a>
+                <a href="#" id="3R"><img src="profil_posztok/3R.png" alt=""></a>
+                <a href="#" id="4R"><img src="profil_posztok/4R.png" alt=""></a>
+                <a href="#" id="5R"><img src="profil_posztok/5R.png" alt=""></a>
 
             </section>
 
@@ -67,7 +80,8 @@
         </footer>
         
     </main>
-</body>
+    <script src="js/profil.js"></script>
+</body> 
 </html>
 
 
