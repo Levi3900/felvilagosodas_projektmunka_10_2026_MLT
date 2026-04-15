@@ -303,6 +303,10 @@ footer p{
     border-bottom: 2px solid white;
 }
 
+#tartalek_commentek {
+    display: none;
+}
+
 @media screen and (max-width: 1300px){
 
     body{

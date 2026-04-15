@@ -41,7 +41,11 @@ function load_comments(post_id) {
                 }
             } 
             else {
-                comment_fill.innerHTML = "<p>erre a posztra még nem érkezett komment.</p>";
+                const comment = document.querySelectorAll(".tartalek_commentek");
+                comment.forEach(function (comment) {
+                    let show = document.getElementById(post_id);
+                    show.style.display = "block";
+                });
             }
         })
 }
