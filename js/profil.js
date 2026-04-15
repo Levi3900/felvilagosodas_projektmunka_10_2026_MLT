@@ -41,11 +41,15 @@ function load_comments(post_id) {
                 }
             } 
             else {
-                const comment = document.querySelectorAll(".tartalek_commentek");
-                comment.forEach(function (comment) {
-                    let show = document.getElementById(post_id);
-                    show.style.display = "block";
-                });
+                const comment = document.getElementById("tartalek_commentek");
+                const fill = Array.from(comment.children).find(function (elem) { 
+                    return elem.id === post_id; }) //AI, máshogyan nem tudtam sajnos megoldani, ez azt csinálja, hogy az összes ID helyett csak is közvetlenül a tartalek_commentek classnak alárendelt ID-kat keresi, majd készít egy tömböt amibe ezeket elhelyezi (array) és megkeresi (.find) aztán az utolsó sor elég egyértelmű
+                const comment_fill = document.getElementsByClassName("comment_fill")[0];
+
+                if (fill) {
+                    comment_fill.innerHTML = fill.innerHTML;
+                    comment_fill.style.display = "block";
+                }
             }
         })
 }
