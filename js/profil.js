@@ -29,11 +29,11 @@ function load_comments(post_id) {
 
             const section = doc.getElementById(post_id);
             const comment_fill = document.querySelector(".comment_fill");
-
+                comment_fill.innerHTML = ""
             if (section) {
                 const comment_source = section.querySelector(".post_comment");
 
-                if (comment_source) {
+                if (comment_source && !comment_source.classList.contains("statikus")) {
                     comment_fill.innerHTML = comment_source.innerHTML;
                 } 
                 else {
@@ -41,15 +41,7 @@ function load_comments(post_id) {
                 }
             } 
             else {
-                const comment = document.getElementById("tartalek_commentek");
-                const fill = Array.from(comment.children).find(function (elem) { 
-                    return elem.id === post_id; }) //AI, máshogyan nem tudtam sajnos megoldani, ez azt csinálja, hogy az összes ID helyett csak is közvetlenül a tartalek_commentek classnak alárendelt ID-kat keresi, majd készít egy tömböt amibe ezeket elhelyezi (array) és megkeresi (.find) aztán az utolsó sor elég egyértelmű
-                const comment_fill = document.getElementsByClassName("comment_fill")[0];
-
-                if (fill) {
-                    comment_fill.innerHTML = fill.innerHTML;
-                    comment_fill.style.display = "block";
-                }
+               comment_fill.innerHTML = "<p>erre a posztra még nem érkezett komment.</p>";
             }
         })
 }
