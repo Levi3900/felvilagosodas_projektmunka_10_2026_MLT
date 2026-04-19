@@ -1,109 +1,7 @@
- :root {
---bg-color: #EEEEEE;
---text-color: #000000;
---accent-color: #833AB4;
---main-color: rgb(255, 255, 255);
---instagram-gradient: conic-gradient(
-
-        #f1ff33,
-        #fff344,
-        #fa7e1e,
-        #d62976,
-        #d62976,
-        #d62976,
-        #d62976,
-        #fa7e1e,
-        #fff344,
-        #f1ff33
-
-      );
-}
-
-#logo {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: right; 
-    gap: 15px;
-    align-items: center
-}
-
-#logo h1 {
-    font-family: "Brush Script MT", cursive;
-}
- 
-#logo img {
-    border-right: 1px solid black; 
-    padding-right: 15px;             
-    margin-right: 5px;               
-    width:  50px; 
-}
-
-nav {
-    margin-top: 10px;
-    justify-self: start;
-    padding-left: 30px;
-    padding-right: 50px;
-    border-right: 3px solid black;
-    position: sticky;
-    top: 0;
-    height: 100vh; 
-}
- 
-nav li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-nav a {
-    display: inline-block;
-    transition: 0.3s;
-}
-
-nav li a:hover {
-    transform: 
-        scale(2.00);
-}
- 
-body {
-    display: grid;
-    background-color: var(--bg-color);
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: 1fr 800px 1fr ;
-    margin: 0;
-    justify-content: center; 
-}
-
-#Instagram_felirat {
-    font-family: "Brush Script MT", cursive; 
-}
-
-main {
-    display: grid;
-    max-width: 800px;
-    margin: auto;
-    grid-template-columns: 500px 300px;
-    grid-template-areas:
-    "h h"
-    "ar as";
-}
- 
 header {
     grid-area: h;
     max-width: 500px;
     background-color: var(--main-color);
-}
- 
-.story_ring { /*AI által adott ötlet, általam kivitelezett*/
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: var(--instagram-gradient);
-    padding: 5px;
 }
 
 .pfp { 
@@ -196,6 +94,9 @@ article section {
 .blokk {
     margin: 100px auto auto auto;
     text-align: center;
+}
+
+.blokk p {
     color: lightslategray;
 }
 
@@ -246,16 +147,6 @@ article {
     margin: 20px 0 0 0;
 }
 
-aside {
-    display: grid;
-    width: 300px;
-    margin: 0;
-    grid-area: as;
-    height: 300px;
-    position: sticky;
-    top: 0;
-}
-
 .aside_profil img {
     border-radius: 50%;
     width: 70px;
@@ -269,128 +160,6 @@ aside {
     grid-auto-flow: column;
 }
 
-#aside_content {
-    background-color: var(--main-color);
-    margin-left: 10px;
-}
-
 #nincsvisszaterites {
     font-size: 1px;
-}
-
-@media screen and (max-width: 1000px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "h"
-        "ar";
-    }
-    
-    aside {
-        display: none;
-    }
-
-    body {
-        max-width: 500px;
-        grid-template-columns: 1fr;
-        margin: auto;
-        display: block;
-        padding-bottom: 60px;
-    }
-
-    nav {
-        display: block;
-        position: fixed;
-        left: auto;
-        right: auto;
-        top: auto;
-        bottom: 0;
-        margin-left: 0;
-        padding: 0;
-        height: auto;
-        border: none;
-        background: none;
-        text-align: center;
-        align-items: center;
-    }
-
-    nav li a:hover {
-        transform: none;
-    }
-
-    #logo {
-        display: none;
-    }
-
-    nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 500px;
-        margin: 0 auto;
-        padding: 0;
-        background-color: var(--main-color);
-        align-items: center;
-    }
-
-    nav li {
-        list-style: none;
-        display: inline-block;
-        margin: 0 auto;
-    }
-
-    nav a {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        font-size: 12px;
-    }
-
-    nav img {
-        width: 15px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    main {
-        max-width: 400px;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "h"
-        "ar";
-    }
-    
-    aside {
-        display: none;
-    }
-
-    body {
-        max-width: 400px;
-        width: 100%;
-        grid-template-columns: 1fr;
-        margin: auto;
-        display: block;
-        padding-bottom: 60px;
-    }
-
-    #logo {
-        display: none;
-    }
-
-    nav ul {
-        margin: auto;
-        width: 400px;
-        gap: 7vh;
-        width: 100%;
-    }
-    header {
-        max-width: 400px;
-        width: 100%;
-    }
-
-    article {
-        width: 100%;
-        max-width: 400px;
-    }
-
 }
