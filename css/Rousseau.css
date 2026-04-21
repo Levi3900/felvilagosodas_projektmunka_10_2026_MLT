@@ -6,19 +6,10 @@ main{
     margin: 0 auto;   
     display: grid;
     grid-template-columns: 1fr;
-
-    
 }
-
-
-
 
 article, footer{
     border: 1px solid black;
-}
-
-article{
-    grid-template-columns: 1fr 1fr;
 }
 
 h4{
@@ -29,21 +20,23 @@ h4{
     border-radius: 50%;
     width: 135px;
     height: 135px;
-    margin-left: 20px;
     object-fit: cover;
-    margin-top:  35px;
+    margin-top: 10px;
 }
 
-
-
-#profil_info p{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+#profil_info_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20px;
 }
 
+#profil_info_header p, h2 {
+    margin: 15px auto;
+}
 
-
-
+#profil_info h4 {
+    padding: 0 20px;
+}
 
 #gombok {
     display: grid;
@@ -62,24 +55,20 @@ h4{
     border-radius: 8px;      
     font-weight: bold;
     padding: 8px 16px;
-    width: 200px;
-    min-width: 100px;
+    max-width: 200px;
     height: 32px;
-    margin-right: 20px;
+    margin: auto;
+    width: 100%;
 }
 
-
-
-
 #posztok{
-    grid-column: 1 / span 2; /*ez azt csinálja hogy kivonja ezt a részt az article alapértelmezett 1fr 1fr től */
+    /* grid-column: 1 / span 2; ez azt csinálja hogy kivonja ezt a részt az article alapértelmezett 1fr 1fr től, ez NEM kell :) <3*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    column-gap: 200px; 
+    margin: auto;
+    width: 100%;
     margin-top: 80px;
     margin-bottom: 60px;
-    margin-left: 40px;
     border-bottom: 1px solid #333; 
     padding-bottom: 15px;
 }
@@ -88,10 +77,12 @@ h4{
 #posztok img {
     max-width: 40px;
     height: auto;
+    display: grid;
+    justify-self: center;
 }
 
 #kepek{
-    grid-column: 1 / span 2;
+    /*grid-column: 1 / span 2; bro*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -100,7 +91,6 @@ h4{
     width: 100%;
 
 }
-
 
 .post_story {
     display: none;
@@ -141,7 +131,6 @@ h4{
     border: none;
 }
 
- 
 .wrapper {
     position: fixed;
     top: 50%;
@@ -190,4 +179,3 @@ h4{
 #tartalek_commentek {
     display: none;
 }
-
