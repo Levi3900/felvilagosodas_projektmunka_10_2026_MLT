@@ -1,14 +1,29 @@
-const post_button = document.querySelectorAll("#kepek > a"); 
+const post_button = document.querySelectorAll("#kepek > a, #reels > a");
 const story_user = document.querySelectorAll(".story_upload p");
 const profil_index = document.getElementById("kirk")
+const button_id = document.querySelectorAll("#posztok > a")
+const post_image = document.querySelector(".show_post img.post_settings");
+const post_video = document.querySelector(".show_post video.post_settings");
+const post_video_source = post_video ? post_video.querySelector("source") : null; //AI
 
 post_button.forEach(function (post_button) {
     post_button.addEventListener("click", function (e) {
         e.preventDefault();
-
         document.getElementsByClassName("show_post")[0].style.display = "block";
-        document.getElementsByClassName("post_settings")[0].src =
-            "profil_posztok/" + post_button.id + ".png";
+
+        if (post_button.id.includes("V")) {
+            post_image.style.display = "none";
+            post_video.style.display = "block";
+            post_video_source.src = "profil_posztok/" + post_button.id + ".mp4";
+            post_video.load();
+            post_video.play();
+        } 
+        else {
+            post_video.pause();
+            post_video.style.display = "none";
+            post_image.style.display = "block";
+            post_image.src = "profil_posztok/" + post_button.id + ".png";
+        }
 
         load_comments(post_button.id);
     });
@@ -16,6 +31,10 @@ post_button.forEach(function (post_button) {
 
 function close_post() {
     document.getElementsByClassName("show_post")[0].style.display = "none";
+    if (post_video) {
+        post_video.pause();
+        post_video.currentTime = 0;
+    }
 }
 
 function load_comments(post_id) {
@@ -45,3 +64,21 @@ function load_comments(post_id) {
             }
         })
 }
+
+function button_pressed(button_id) {
+    button_id.forEach (
+        function (button_id) {
+        button_id.addEventListener("click", function (e) { e.preventDefault();
+            if (button_id.id == "kepek_button") {
+                document.getElementById("kepek").style.display = "grid";
+                document.getElementById("reels").style.display = "none";
+            }
+            else {
+                document.getElementById("kepek").style.display = "none";
+                document.getElementById("reels").style.display = "grid";
+            }})
+        }
+    )
+}
+
+button_pressed(button_id);

@@ -29,20 +29,16 @@
             <div class="show_post">
                 <div class="wrapper"> <!--A gombhoz szükséges-->
                     <img src="assets/placeholder.png" alt="" class="post_settings">
+                    <video autoplay muted loop class="post_settings"> 
+                        <source src="profil_posztok/R1V.mp4" type="video/mp4">
+                    </video>
                     <button id="close_button" onclick="close_post()">
                         X
                     </button>
                     <div class="post_aside">
                         <p class="post_username">Rousseau_123</p>
                         <p><b>kommentek: </b></p>
-                        <div class="comment_fill">
-                            <section id="tartalek_commentek">
-                                    <div id="2R">
-                                        <p><b>placeholder:</b> placeholder</p>
-                                        <p><b>placeholder:</b> placeholder</p>
-                                    </div>
-                            </section>
-                        </div>
+                        <div class="comment_fill"></div>
                     </div>
                 </div>
             </div>
@@ -68,14 +64,13 @@
                 <button id="gomb2">Üzenetek</button>
             </div>
             </section>
-
+            
             <section id="posztok">
-                    <a href="Rousseau.html"><img id="kep1" src="istagram logos/bejegyzes.png"    alt="bejegyzes"></a>
-                    <a href="Rousseau2.html"><img id="kep2" src="istagram logos/reels.png" alt="reels"></a>
-
-              
+                    <a href="#" id="kepek_button"><img id="kep1" src="istagram logos/bejegyzes.png" alt="bejegyzes"></a>
+                    <a href="#" id="reels_button"><img id="kep2" src="istagram logos/reels.png" alt="reels"></a>
             </section>
-            <section id="kepek">
+
+            <section id="kepek" class="kepek">
 
                 <a href="#" id="1R"><img src="profil_posztok/1R.png" alt=""></a>
                 <a href="#" id="2R"><img src="profil_posztok/2R.png" alt=""></a>
@@ -84,10 +79,14 @@
                 <a href="#" id="5R"><img src="profil_posztok/5R.png" alt=""></a>
 
             </section>
-
+            <section id="reels" class="kepek">
+                <a href="#" id="R1V">
+                    <video autoplay muted loop> 
+                        <source src="profil_posztok/R1V.mp4" type="video/mp4">
+                    </video>
+                </a>
+            </section>
         </article>
-
-        
     </main>
     <script src="js/profil.js"></script>
 </body> 
