@@ -75,7 +75,6 @@ article section {
 .hivas {
     display: grid;
     grid-template-columns: 1fr 50px;
-    color: white;
     background-color: lightslategray;
     border-radius: 25px;
     margin: auto;
@@ -89,6 +88,10 @@ article section {
     width: 40px;
     height: 40px;
     margin: auto 50px auto auto;
+}
+
+.hivas p {
+    color: white;
 }
 
 .blokk {

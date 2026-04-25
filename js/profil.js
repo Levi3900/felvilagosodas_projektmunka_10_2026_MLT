@@ -1,4 +1,4 @@
-const post_button = document.querySelectorAll("#kepek > a, #reels > a");
+const post_button = document.querySelectorAll("#kepek > a, .kepek > a, #reels > a");
 const story_user = document.querySelectorAll(".story_upload p");
 const profil_index = document.getElementById("kirk")
 const button_id = document.querySelectorAll("#posztok > a")
@@ -10,7 +10,6 @@ post_button.forEach(function (post_button) {
     post_button.addEventListener("click", function (e) {
         e.preventDefault();
         document.getElementsByClassName("show_post")[0].style.display = "block";
-
         if (post_button.id.includes("V")) {
             post_image.style.display = "none";
             post_video.style.display = "block";
@@ -19,12 +18,13 @@ post_button.forEach(function (post_button) {
             post_video.play();
         } 
         else {
-            post_video.pause();
-            post_video.style.display = "none";
+            if (post_video) {
+                post_video.pause();
+                post_video.style.display = "none";
+            }
             post_image.style.display = "block";
             post_image.src = "profil_posztok/" + post_button.id + ".png";
         }
-
         load_comments(post_button.id);
     });
 });
@@ -68,14 +68,20 @@ function load_comments(post_id) {
 function button_pressed(button_id) {
     button_id.forEach (
         function (button_id) {
-        button_id.addEventListener("click", function (e) { e.preventDefault();
-            if (button_id.id == "kepek_button") {
-                document.getElementById("kepek").style.display = "grid";
-                document.getElementById("reels").style.display = "none";
+        button_id.addEventListener("click", function (e) {
+            if (button_id.id != "kepek_button" && button_id.id != "reels_button") {
+                return;
+            }
+            e.preventDefault();
+            const kepek_section = document.getElementById("kepek") || document.querySelector("section.kepek:not(#reels)"); //AI
+            const reels_section = document.getElementById("reels"); //AI
+            if (button_id.id == "kepek_button") { 
+                kepek_section.style.display = "grid";
+                reels_section.style.display = "none";
             }
             else {
-                document.getElementById("kepek").style.display = "none";
-                document.getElementById("reels").style.display = "grid";
+                kepek_section.style.display = "none";
+                reels_section.style.display = "grid";
             }})
         }
     )
