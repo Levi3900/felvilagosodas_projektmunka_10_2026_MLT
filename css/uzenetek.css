@@ -1,218 +1,11 @@
- :root {
---bg-color: #EEEEEE;
---text-color: #000000;
---accent-color: #833AB4;
---main-color: white;
---instagram-gradient: conic-gradient(
-
-        #f1ff33,
-        #fff344,
-        #fa7e1e,
-        #d62976,
-        #d62976,
-        #d62976,
-        #d62976,
-        #fa7e1e,
-        #fff344,
-        #f1ff33
-
-      );
-}
-
-#logo {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: right; 
-    gap: 15px;
-    align-items: center
-}
-
-#logo h1 {
-    font-family: "Brush Script MT", cursive;
-}
- 
-#logo img {
-    border-right: 1px solid black; 
-    padding-right: 15px;             
-    margin-right: 5px;               
-    width:  50px; 
-}
-
-nav {
-    margin-top: 10px;
-    justify-self: start;
-    padding-left: 30px;
-    padding-right: 50px;
-    border-right: 3px solid black;
-    position: sticky;
-    top: 0;
-    height: 100vh; 
-}
- 
-nav li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-nav a {
-    display: inline-block;
-    transition: 0.3s;
-}
-
-nav li a:hover {
-    transform: 
-        scale(2.00);
-}
- 
-body {
-    display: grid;
-    background-color: var(--bg-color);
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: 1fr 800px 1fr ;
-    margin: 0;
-    justify-content: center; 
-}
-
-#Instagram_felirat {
-    font-family: "Brush Script MT", cursive; 
-}
-
-main {
-    display: grid;
-    max-width: 800px;
-    margin: auto;
-    grid-template-columns: 500px 300px;
-    grid-template-areas:
-    "h h"
-    "ar as";
-}
- 
 header {
     grid-area: h;
-    max-width: 500px;
-    background-color: var(--main-color);
 }
  
-.story_ring { /*AI által adott ötlet, általam kivitelezett*/
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: var(--instagram-gradient);
-    padding: 5px;
-}
- 
-.story_img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
- 
-.stories {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: auto;
-    gap: 30px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 5px;
-    text-align: center;
-}
- 
-.stories::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
-    display: none;
-}
 
-.post_content::-webkit-scrollbar { /*AI: eltünteni, a storyknál a scrollbart*/
-    display: none;
-}
-
-.show_story {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;            
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(12px);
-    z-index: 9998;
-    justify-content: center;
-}
-
-#close_button {
-    z-index: 9999;
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    background-color: white;
-    color: black;
-    border: none;
-}
-
-#close_button:hover {
-    background: var(--instagram-gradient);
-    color: #353434;
-}
-
-.post_header {
-    max-height: 40px;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-}
- 
-.wrapper {
-    position: fixed;
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%); /*AI, a top:50% és left:50%al működik együtt, hogy középre helyezze a storyt*/
-}
-
-.story_settings {
-    width: 100%;
-    max-width: 500px;
-    z-index: 9998;
-    background-color: black;
-}
-
-.story_pfp {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--instagram-gradient);
-    padding: 2px;
-}
-
-.story_username {
-    position: absolute;
-    top: 0;
-    left: 27px;
-    right: 0;
-    margin: 0;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-.story_uploader p {
-    color: white;
-    margin: 3px;
-    padding-bottom: 0.3vh;
-    border-bottom: 2px solid white;
-}
 
 section {
     min-width: 0;
-}
-
-.icons {
-     max-width: 30px
 }
 
 .icons_nav {
@@ -221,13 +14,7 @@ section {
 }
 
 article {
-    display: grid;
-    width: 500px;
-    margin: 0;
-    grid-area: ar;
-    background-color: var(--main-color);
-    min-width: 0;
-    padding-bottom: 1000px; /*Ideiglenes*/
+    padding-bottom: 190px; /*Ideiglenes*/
 }
 
 .story_ring_msg {
@@ -286,34 +73,6 @@ article {
     overflow: hidden;
     text-overflow: ellipsis;
     min-width: 0;
-}
-
-aside {
-    display: grid;
-    width: 300px;
-    margin: 0;
-    grid-area: as;
-    height: 400px;
-    position: sticky;
-    top: 0;
-}
-
-.aside_profil img {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    margin-left: 10px;
-}
-
-.aside_profil {
-    display: grid;
-    grid-auto-flow: column;
-}
-
-#aside_content {
-    background-color: var(--main-color);
-    margin-left: 10px;
 }
 
 @media screen and (max-width: 1100px) {

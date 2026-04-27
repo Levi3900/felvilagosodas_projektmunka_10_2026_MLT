@@ -77,7 +77,7 @@ body {
     display: grid;
     background-color: var(--bg-color);
     font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: 1fr 800px 1fr ;
+    grid-template-columns: 1fr 1200px 1fr ;
     margin: 0;
     justify-content: center; 
 }
