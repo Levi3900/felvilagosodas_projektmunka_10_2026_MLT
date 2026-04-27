@@ -1,21 +1,40 @@
-const post_button = document.querySelectorAll("#kepek > a"); 
+const post_button = document.querySelectorAll("#kepek > a, .kepek > a, #reels > a");
 const story_user = document.querySelectorAll(".story_upload p");
 const profil_index = document.getElementById("kirk")
+const button_id = document.querySelectorAll("#posztok > a")
+const post_image = document.querySelector(".show_post img.post_settings");
+const post_video = document.querySelector(".show_post video.post_settings");
+const post_video_source = post_video ? post_video.querySelector("source") : null; //AI
 
 post_button.forEach(function (post_button) {
     post_button.addEventListener("click", function (e) {
         e.preventDefault();
-
         document.getElementsByClassName("show_post")[0].style.display = "block";
-        document.getElementsByClassName("post_settings")[0].src =
-            "profil_posztok/" + post_button.id + ".png";
-
+        if (post_button.id.includes("V")) {
+            post_image.style.display = "none";
+            post_video.style.display = "block";
+            post_video_source.src = "profil_posztok/" + post_button.id + ".mp4";
+            post_video.load();
+            post_video.play();
+        } 
+        else {
+            if (post_video) {
+                post_video.pause();
+                post_video.style.display = "none";
+            }
+            post_image.style.display = "block";
+            post_image.src = "profil_posztok/" + post_button.id + ".png";
+        }
         load_comments(post_button.id);
     });
 });
 
 function close_post() {
     document.getElementsByClassName("show_post")[0].style.display = "none";
+    if (post_video) {
+        post_video.pause();
+        post_video.currentTime = 0;
+    }
 }
 
 function load_comments(post_id) {
@@ -29,11 +48,11 @@ function load_comments(post_id) {
 
             const section = doc.getElementById(post_id);
             const comment_fill = document.querySelector(".comment_fill");
-
+                comment_fill.innerHTML = ""
             if (section) {
                 const comment_source = section.querySelector(".post_comment");
 
-                if (comment_source) {
+                if (comment_source && !comment_source.classList.contains("statikus")) {
                     comment_fill.innerHTML = comment_source.innerHTML;
                 } 
                 else {
@@ -41,15 +60,31 @@ function load_comments(post_id) {
                 }
             } 
             else {
-                const comment = document.getElementById("tartalek_commentek");
-                const fill = Array.from(comment.children).find(function (elem) { 
-                    return elem.id === post_id; }) //AI, máshogyan nem tudtam sajnos megoldani, ez azt csinálja, hogy az összes ID helyett csak is közvetlenül a tartalek_commentek classnak alárendelt ID-kat keresi, majd készít egy tömböt amibe ezeket elhelyezi (array) és megkeresi (.find) aztán az utolsó sor elég egyértelmű
-                const comment_fill = document.getElementsByClassName("comment_fill")[0];
-
-                if (fill) {
-                    comment_fill.innerHTML = fill.innerHTML;
-                    comment_fill.style.display = "block";
-                }
+               comment_fill.innerHTML = "<p>erre a posztra még nem érkezett komment.</p>";
             }
         })
 }
+
+function button_pressed(button_id) {
+    button_id.forEach (
+        function (button_id) {
+        button_id.addEventListener("click", function (e) {
+            if (button_id.id != "kepek_button" && button_id.id != "reels_button") {
+                return;
+            }
+            e.preventDefault();
+            const kepek_section = document.getElementById("kepek") || document.querySelector("section.kepek:not(#reels)"); //AI
+            const reels_section = document.getElementById("reels"); //AI
+            if (button_id.id == "kepek_button") { 
+                kepek_section.style.display = "grid";
+                reels_section.style.display = "none";
+            }
+            else {
+                kepek_section.style.display = "none";
+                reels_section.style.display = "grid";
+            }})
+        }
+    )
+}
+
+button_pressed(button_id);

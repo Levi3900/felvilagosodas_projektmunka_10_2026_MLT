@@ -72,7 +72,7 @@ nav li a:hover {
     transform: 
         scale(2.00);
 }
- 
+
 body {
     display: grid;
     background-color: var(--bg-color);

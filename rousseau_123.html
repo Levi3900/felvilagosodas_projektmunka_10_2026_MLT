@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rousseau profilja">
+    <meta name="keywords" content="Rousseau, felvilágosodás">
+    <title>Rousseau</title>
+    <link rel="stylesheet" href="css/stilus.css">
+    <link rel="stylesheet" href="css/Rousseau.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="istagram logos/instagram-logo.png" alt="logo"></a>
+            <a href="index.html"><h1>Instagram</h1></a>
+        </div>
+        <ul>
+            <li><a href="index.html"><img src="istagram logos/house.svg" alt="" class="icons_nav">Kezdőlap</a></li>
+            <li><a href="felmeres.html"><img src="istagram logos/mail.svg" alt="" class="icons_nav">Felmérés</a></li>
+            <li><a href="uzenetek.html"><img src="istagram logos/message-circle.svg" alt="" class="icons_nav">Üzenetek</a></li>
+            <li><a href="on.html"><img src="istagram logos/users.svg" alt="" class="icons_nav">Profil</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <article>
+            <div class="show_post">
+                <div class="wrapper"> <!--A gombhoz szükséges-->
+                    <img src="assets/placeholder.png" alt="" class="post_settings">
+                    <video autoplay muted loop class="post_settings"> 
+                        <source src="profil_posztok/R1V.mp4" type="video/mp4">
+                    </video>
+                    <button id="close_button" onclick="close_post()">
+                        X
+                    </button>
+                    <div class="post_aside">
+                        <p class="post_username">Rousseau_123</p>
+                        <p><b>kommentek: </b></p>
+                        <div class="comment_fill"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <section id="profil_info">
+            <div id="profil_info_header">
+                <img id="pfp" src="profilkepek/Rousseau_123.jpg " alt="kep" class="story_ring">
+                    <div>
+                        <h2>rousseau_123</h2>
+                        <p><strong>3</strong> bejegyzés</p>
+                        <p><strong>4</strong> követő</p>
+                        <p><strong>7</strong> követés</p>
+                    </div>
+            </div>
+            <h4>Szlogen: Az ember szabadnak született <br>
+                Foglalkozás: Filozófus <br>
+                Hobbi: Zene🎶🎶 <br>
+                Bemutatkozás: <br>
+                Genf-ben születtem 165cm vagyok szeretek zenélni és írni is <br>
+            </h4>
+            <div id="gombok">
+                <button id="gomb1" type="button" onclick="alert('Követed rousseaut')">Követés</button>
+                <button id="gomb2">Üzenetek</button>
+            </div>
+            </section>
+            
+            <section id="posztok">
+                    <a href="#" id="kepek_button"><img id="kep1" src="istagram logos/bejegyzes.png" alt="bejegyzes"></a>
+                    <a href="#" id="reels_button"><img id="kep2" src="istagram logos/reels.png" alt="reels"></a>
+            </section>
+
+            <section class="kepek">
+
+                <a href="#" id="1R"><img src="profil_posztok/1R.png" alt=""></a>
+                <a href="#" id="2R"><img src="profil_posztok/2R.png" alt=""></a>
+                <a href="#" id="3R"><img src="profil_posztok/3R.png" alt=""></a>
+                <a href="#" id="4R"><img src="profil_posztok/4R.png" alt=""></a>
+                <a href="#" id="5R"><img src="profil_posztok/5R.png" alt=""></a>
+
+            </section>
+            <section id="reels" class="kepek">
+                <a href="#" id="R1V">
+                    <video autoplay muted loop> 
+                        <source src="profil_posztok/R1V.mp4" type="video/mp4">
+                    </video>
+                </a>
+            </section>
+        </article>
+    </main>
+    <script src="js/profil.js"></script>
+</body> 
+</html>
+
+
+
+
+
+
+

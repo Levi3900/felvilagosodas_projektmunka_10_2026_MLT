@@ -38,6 +38,7 @@ story_button.forEach(
             document.getElementsByClassName("story_settings")[0].src = "assets/" + story_button.id + ".png";
             document.getElementsByClassName("story_pfp")[0].src = "profilkepek/" + story_button.id + ".jpg";
             document.getElementsByClassName("story_username")[0].textContent = story_button.id;
+            document.getElementsByClassName("story_link")[0].href = story_button.id + ".html"
             document.getElementsByClassName("show_story")[0].style.display = "block";
         });
     }
