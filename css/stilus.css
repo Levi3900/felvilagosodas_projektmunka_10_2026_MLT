@@ -378,7 +378,7 @@ article button:hover {
     display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1400px) {
     main {
         grid-template-columns: 1fr;
         grid-template-areas: 
