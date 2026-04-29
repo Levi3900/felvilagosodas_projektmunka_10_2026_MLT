@@ -481,7 +481,7 @@ article button:hover {
     nav ul {
         margin: auto;
         width: 400px;
-        gap: 66px;
+        gap: 6px;
         width: 100%;
     }
 
@@ -495,6 +495,16 @@ article button:hover {
     
     .post_username {
         margin: auto 0 auto 0;
+    }
+
+    .post_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .post_video {
+        width: 100%;
+        height: 100%;
     }
     
     .post_content {
