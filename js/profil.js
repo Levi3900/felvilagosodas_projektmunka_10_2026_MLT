@@ -52,7 +52,7 @@ function load_comments(post_id) {
             if (section) {
                 const comment_source = section.querySelector(".post_comment");
 
-                if (comment_source && !comment_source.classList.contains("statikus")) {
+                if (comment_source) {
                     comment_fill.innerHTML = comment_source.innerHTML;
                 } 
                 else {
