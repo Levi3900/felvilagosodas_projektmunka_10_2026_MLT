@@ -480,8 +480,8 @@ article button:hover {
 
     nav ul {
         margin: auto;
-        width: 400px;
-        gap: 6px;
+        max-width: 400px;
+        gap: 65px;
         width: 100%;
     }
 
@@ -498,13 +498,13 @@ article button:hover {
     }
 
     .post_img {
-        width: 100%;
-        height: 100%;
+        width: 400px;
+        height: 400px;
     }
 
     .post_video {
-        width: 100%;
-        height: 100%;
+        width: 400px;
+        height: 400px;
     }
     
     .post_content {
