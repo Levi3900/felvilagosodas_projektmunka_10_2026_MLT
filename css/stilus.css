@@ -496,16 +496,6 @@ article button:hover {
     .post_username {
         margin: auto 0 auto 0;
     }
-
-    .post_img {
-        width: 400px;
-        height: 400px;
-    }
-
-    .post_video {
-        width: 400px;
-        height: 400px;
-    }
     
     .post_content {
         grid-auto-columns: 100%;
